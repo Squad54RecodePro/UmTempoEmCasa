@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anaba\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
+    "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anaba\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
+    "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anaba\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "projectUniqueName": "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
         "projectName": "UmTempoEmCasa",
-        "projectPath": "C:\\Users\\anaba\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-        "packagesPath": "C:\\Users\\anaba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anaba\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa\\obj\\",
+        "projectPath": "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "packagesPath": "C:\\Users\\jcley\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jcley\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
