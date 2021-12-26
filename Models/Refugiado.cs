@@ -19,5 +19,8 @@ namespace UmTempoEmCasa.Models
 
         [Required(ErrorMessage ="É necessário possuir um CPF para se cadastrar, verifique o link de acesso disponibilizado ao lado")]
         public string CPF { get; set; }
+
+        [Required(ErrorMessage="Preencha a Data de Nascimento")]
+        public Data Nascimento {get;set;}
     }
 }
