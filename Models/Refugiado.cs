@@ -5,7 +5,7 @@ namespace UmTempoEmCasa.Models
     public class Refugiado
     {
         [Key]
-        public string Id { get; set; }
+        public string ID { get; set; }
 
         [Required(ErrorMessage ="Insira seu Nome para efetuar o Cadastro")]
         [MaxLength(50,ErrorMessage ="Quantidade de carateres maior que o permitido")]
@@ -48,6 +48,13 @@ namespace UmTempoEmCasa.Models
         [MinLength(8, ErrorMessage="Confira o CEP informado, quantidade de números menor que 8")]
         public string CEP { get; set; }
 
+
+        public virtual Reserva Reserva { get; set; }
+
+        public Refugiado()
+        {
+            this.Reserva = new Reserva();
+        }
 
 
 

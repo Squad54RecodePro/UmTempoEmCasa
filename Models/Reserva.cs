@@ -7,16 +7,25 @@ namespace UmTempoEmCasa.Models
 
     
         [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
+
+        public int RefugiadoID { get; set; }
+        public int AnfitriaoID { get; set; }
+        public int AnuncioID { get; set; }
+        public int ImovelID { get; set; }
 
         public virtual Refugiado Refugiado { get; set; }
         public virtual Anfitriao Anfitriao { get; set; }
 
-        [Required(ErrorMessage ="Defina a Data de Inicio do Contrato")]
+        public virtual Anuncio Anuncio { get; set; }
+
+        public virtual Imovel Imovel { get; set; }
+
+        [Required(ErrorMessage ="Defina a Data de Inicio da Reserva")]
         [Display(Name ="Data de Inicio")]
         public DateTime DateInicio { get; set; }
 
-        [Required(ErrorMessage ="Defina a Data de Termino do Contrato")]
+        [Required(ErrorMessage ="Defina a Data de Termino da Reserva")]
         [Display(Name ="Data de Encerramento")]
         public DateTime DataFim { get; set; }
 
