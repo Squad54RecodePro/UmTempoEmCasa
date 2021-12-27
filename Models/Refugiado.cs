@@ -15,6 +15,7 @@ namespace UmTempoEmCasa.Models
 
         [Required(ErrorMessage = "Preencha a Data de Nascimento")]
         [Display(Name = "Data de Nascimento")]
+        [DisplayFormat(DataFormatString = "mm/dd/yyyy")]
         public DateTime Nascimento { get; set; }
 
         [Required(ErrorMessage = "É necessário possuir um CPF para se cadastrar, verifique o link de acesso disponibilizado ao lado")]
