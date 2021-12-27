@@ -14,41 +14,58 @@ namespace UmTempoEmCasa.Models
         [Required(ErrorMessage = "Insira seu Nome para efetuar o Cadastro")]
         [MaxLength(50, ErrorMessage = "Quantidade de carateres maior que o permitido")]
         [MinLength(2, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
-        [DisplayName("Nome Completo")]
+        [Display(Name = "Nome Completo")]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Para prosseguir com o cadastro selecione PF ou PJ")]
-        [DisplayName("Tipo")]
+        [Display(Name = "Tipo")]
         public string Tipo { get; set; }
 
-        [Required(ErrorMessage = "Informe sua data de nascimento")]
-        [DisplayName("Data de Nascimento")]
-        public DateTime Data_nascimento { get; set; }
+        [DisplayFormat(DataFormatString = "mm/dd/yyyy")]
+        [Display(Name = "Data de Nascimento")]
+        public DateTime? Nascimento { get; set; }
 
-        [Required(ErrorMessage = "Insira seu telefone")]
-        [DisplayName("Telefone")]
-        public int Contato { get; set; }
+        [Required(ErrorMessage = "Preencha o campo Telefone para continuar")]
+        [MaxLength(11, ErrorMessage = "Preencha apenas o DDD e o número de telefone")]
+        [MinLength(10, ErrorMessage = "Confira o número informado, faltam números")]
+        [Display(Name = "Telefone")]
+        public string Telefone { get; set; }
 
-        [Required(ErrorMessage = "Insira o campo nome para prosseguir")]
-        [MaxLength(100, ErrorMessage = "Número de caracteres excedido")]
-        [DisplayName("Endereço")]
-        public string Endereco { get; set; }
-
-        [Required(ErrorMessage = "Insira o seu CEP")]
-        [DisplayName("CEP")]
-        public string Cep { get; set; }
-
-        [Required(ErrorMessage = "Insira o documento para identificação")]
-        [DisplayName("Documento de identificação")]
-        public string Documento { get; set; }
-
-        [Required(ErrorMessage = "Insira o seu e-mail")]
-        [EmailAddress(ErrorMessage = "Preencha um E-mail Válido")]
-        [DisplayName("E-mail")]
+        [Required(ErrorMessage = "Preencha o campo E-mail para continuar")]
+        [MaxLength(50, ErrorMessage = "Máximo de caracteres excedido")]
+        [EmailAddress]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage = "Preencha o campo endereço")]
+        [MaxLength(100, ErrorMessage = "Quantidade de caracteres excedida")]
+        [MinLength(5, ErrorMessage = "Confira o endereço informado")]
+        [Display(Name = "Endereço")]
+        public string Endereco { get; set; }
+
+        [Required(ErrorMessage = "Insira o campo nome para prosseguir")]
+        [MaxLength(30, ErrorMessage = "Número de caracteres excedido")]
+        [Display(Name = "Cidade")]
+        public string Cidade { get; set; }
+
+        [Required(ErrorMessage = "Informe o CEP do seu endereço")]
+        [MaxLength(10, ErrorMessage = "Quantidade de caracteres excedida")]
+        [MinLength(8, ErrorMessage = "Confira o CEP informado, quantidade de números menor que 8")]
+        [Display(Name = "CEP")]
+        public string CEP { get; set; }
+     
+        [MaxLength(11, ErrorMessage = "Quantidade de carateres maior que o permitido")]
+        [MinLength(11, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
+        [Display(Name = "Documento de identificação")]
+        public string? CPF { get; set; }
+
+        [MaxLength(14, ErrorMessage = "Quantidade de carateres maior que o permitido")]
+        [MinLength(14, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
+        [Display(Name = "Documento de identificação")]
+        public string? CNPJ { get; set; }
+
         [Required(ErrorMessage = "Insira sua senha")]
-        [DisplayName("Senha")]
+        [Display(Name = "Senha")]
         public string Senha { get; set; }
     }
 }
