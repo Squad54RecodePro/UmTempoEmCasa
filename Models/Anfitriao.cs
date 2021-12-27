@@ -9,7 +9,7 @@ namespace UmTempoEmCasa.Models
     public class Anfitriao
     {
         [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         [Required(ErrorMessage = "Insira seu Nome para efetuar o Cadastro")]
         [MaxLength(50, ErrorMessage = "Quantidade de carateres maior que o permitido")]
@@ -64,8 +64,27 @@ namespace UmTempoEmCasa.Models
         [Display(Name = "Documento de identificação")]
         public string? CNPJ { get; set; }
 
+        [StringLength(10, MinimumLength = 4)]
         [Required(ErrorMessage = "Insira sua senha")]
         [Display(Name = "Senha")]
         public string Senha { get; set; }
+
+        public virtual Imovel Imovel { get; set; }
+
+        public virtual Reserva Reserva { get; set; }
+
+        public virtual Anuncio Anuncio { get; set; }
+
+        public Anfitriao() 
+        {
+            this.Imovel = new HashSet<Imovel>();
+            this.Anuncio = new HashSet<Anuncio>();
+            this.Reserva = new HashSet<Reserva>();
+        }
+        public virtual ICollection<Imovel> Imovel { get; set; }
+
+        public virtual ICollection<Anuncio> Anuncio { get; set; }
+
+        public virtual ICollection<Reserva> Reserva { get; set; }
     }
 }
