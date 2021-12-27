@@ -12,6 +12,10 @@ namespace UmTempoEmCasa.Models
         public int AnfitriaoID { get; set; }
         public virtual Anfitriao Anfitriao { get; set; }
 
+        [ForeignKey("Imovel")]
+        public int ImovelID { get; set; }
+        public virtual Imovel Imovel { get; set; }
+
         [Required(ErrorMessage ="Especifique o nome do anuncio")]
         [Display(Name ="Nome do Anuncio")]
         [MaxLength(20,ErrorMessage ="Máximo de caracteres ultrapassado")]
