@@ -5,7 +5,7 @@ namespace UmTempoEmCasa.Models
     public class Refugiado
     {
         [Key]
-        public string ID { get; set; }
+        public int ID { get; set; }
 
         [Required(ErrorMessage ="Insira seu Nome para efetuar o Cadastro")]
         [MaxLength(50,ErrorMessage ="Quantidade de carateres maior que o permitido")]
