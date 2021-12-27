@@ -26,9 +26,7 @@ namespace UmTempoEmCasa.Models
         [Display(Name ="Valor")]
         public float valor { get; set; }
 
-        public virtual Imovel Imovel { get; set; }
-
-       
+              
 
         public virtual Reserva Reserva { get; set; }
 
