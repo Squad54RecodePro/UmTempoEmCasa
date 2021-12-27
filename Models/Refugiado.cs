@@ -52,9 +52,12 @@ namespace UmTempoEmCasa.Models
 
         public virtual Reserva Reserva { get; set; }
 
+        
+
         public Refugiado()
         {
             this.Reserva = new Reserva();
+           
         }
 
 

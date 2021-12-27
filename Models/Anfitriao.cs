@@ -69,16 +69,14 @@ namespace UmTempoEmCasa.Models
         [Display(Name = "Senha")]
         public string Senha { get; set; }
 
-        public virtual Imovel Imovel { get; set; }
-
-        public virtual Reserva Reserva { get; set; }
-
-        public virtual Anuncio Anuncio { get; set; }
+       
 
         public Anfitriao() 
         {
             this.Imovel = new HashSet<Imovel>();
+
             this.Anuncio = new HashSet<Anuncio>();
+
             this.Reserva = new HashSet<Reserva>();
         }
         public virtual ICollection<Imovel> Imovel { get; set; }

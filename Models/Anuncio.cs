@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UmTempoEmCasa.Models
 {
@@ -6,6 +7,10 @@ namespace UmTempoEmCasa.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [ForeignKey("Anfitriao")]
+        public int AnfitriaoID { get; set; }
+        public virtual Anfitriao Anfitriao { get; set; }
 
         [Required(ErrorMessage ="Especifique o nome do anuncio")]
         [Display(Name ="Nome do Anuncio")]
@@ -19,7 +24,7 @@ namespace UmTempoEmCasa.Models
 
         public virtual Imovel Imovel { get; set; }
 
-        public virtual Anfitriao Anfitriao { get; set; }
+       
 
         public virtual Reserva Reserva { get; set; }
 
