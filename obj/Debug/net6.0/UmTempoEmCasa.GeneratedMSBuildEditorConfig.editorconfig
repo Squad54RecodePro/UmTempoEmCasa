@@ -8,57 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UmTempoEmCasa
 build_property.RootNamespace = UmTempoEmCasa
-build_property.ProjectDir = C:\Users\jcley\Desktop\UmTempoEmCasa\
+build_property.ProjectDir = C:\Users\Administrador\Desktop\UmTempoEmCasa\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jcley\Desktop\UmTempoEmCasa
+build_property.MSBuildProjectDirectory = C:\Users\Administrador\Desktop\UmTempoEmCasa
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Anuncios/Create.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anfitriaos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anfitriaos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anfitriaos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anfitriaos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anfitriaos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anuncios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Anuncios/Delete.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anuncios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Anuncios/Details.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anuncios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Anuncios/Edit.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anuncios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Anuncios/Index.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Anuncios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Home/Contato.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Home/Contato.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Home/Index.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Shared/Error.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/_ViewImports.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/_ViewStart.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/UmTempoEmCasa/Views/Shared/_Layout.cshtml]
+[C:/Users/Administrador/Desktop/UmTempoEmCasa/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ayebw2345a

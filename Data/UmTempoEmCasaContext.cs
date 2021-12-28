@@ -14,4 +14,6 @@ using UmTempoEmCasa.Models;
         }
 
         public DbSet<UmTempoEmCasa.Models.Anuncio> Anuncio { get; set; }
+
+        public DbSet<UmTempoEmCasa.Models.Anfitriao> Anfitriao { get; set; }
     }
