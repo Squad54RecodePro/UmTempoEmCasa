@@ -49,6 +49,11 @@ namespace UmTempoEmCasa.Models
         [MinLength(8, ErrorMessage="Confira o CEP informado, quantidade de números menor que 8")]
         public string CEP { get; set; }
 
+        [Required(ErrorMessage = "Informe uma Senha para continuar")]
+        [MaxLength(15, ErrorMessage ="Senha muito Longa, escolha outra senha")]
+        [MinLength(6, ErrorMessage ="Senha muito curta, use mais de 6 caracteres")]
+        public string Senha { get; set; }
+
 
         public virtual Reserva Reserva { get; set; }
 
