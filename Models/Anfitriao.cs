@@ -69,8 +69,6 @@ namespace UmTempoEmCasa.Models
         [Display(Name = "Senha")]
         public string Senha { get; set; }
 
-       
-
         public Anfitriao() 
         {
             this.Imovel = new HashSet<Imovel>();
