@@ -16,4 +16,10 @@ using UmTempoEmCasa.Models;
         public DbSet<UmTempoEmCasa.Models.Anuncio> Anuncio { get; set; }
 
         public DbSet<UmTempoEmCasa.Models.Anfitriao> Anfitriao { get; set; }
+
+        public DbSet<UmTempoEmCasa.Models.Imovel> Imovel { get; set; }
+
+        public DbSet<UmTempoEmCasa.Models.Reserva> Reserva { get; set; }
+
+        public DbSet<UmTempoEmCasa.Models.Refugiado> Refugiado { get; set; }
     }
