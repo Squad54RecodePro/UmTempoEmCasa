@@ -8,8 +8,10 @@ namespace UmTempoEmCasa.Models
 {
     public class Anfitriao
     {
-        [Key]
-        public int ID { get; set; }
+        public int AnfitriaoID { get; set; }
+
+        public List<Imovel>? Imovel { get; set; }
+
 
         [Required(ErrorMessage = "Insira seu Nome para efetuar o Cadastro")]
         [MaxLength(50, ErrorMessage = "Quantidade de carateres maior que o permitido")]
@@ -53,7 +55,7 @@ namespace UmTempoEmCasa.Models
         [MinLength(8, ErrorMessage = "Confira o CEP informado, quantidade de números menor que 8")]
         [Display(Name = "CEP")]
         public string CEP { get; set; }
-     
+
         [MaxLength(11, ErrorMessage = "Quantidade de carateres maior que o permitido")]
         [MinLength(11, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
         [Display(Name = "Documento de identificação")]
@@ -68,19 +70,5 @@ namespace UmTempoEmCasa.Models
         [Required(ErrorMessage = "Insira sua senha")]
         [Display(Name = "Senha")]
         public string Senha { get; set; }
-
-        public Anfitriao() 
-        {
-            this.Imovel = new HashSet<Imovel>();
-
-            this.Anuncio = new HashSet<Anuncio>();
-
-            this.Reserva = new HashSet<Reserva>();
-        }
-        public virtual ICollection<Imovel> Imovel { get; set; }
-
-        public virtual ICollection<Anuncio> Anuncio { get; set; }
-
-        public virtual ICollection<Reserva> Reserva { get; set; }
     }
 }

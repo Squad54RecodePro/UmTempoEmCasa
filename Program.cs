@@ -1,12 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using UmTempoEmCasa.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<UmTempoEmCasaContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("UmTempoEmCasaContext")));
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<MVCContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoBanco"));
+});
 
 var app = builder.Build();
 
