@@ -30,19 +30,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark"  asp-area="" asp-controller="Refugiado" asp-action="Create">Refugiado</a>
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Refugiado" asp-action="Index">Refugiado</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Anfitriao" asp-action="Create">Anfitrião</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Anfitriao" asp-action="Index">Anfitrião</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Imovel" asp-action="Create">Imóvel</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Imovel" asp-action="Index">Imóvel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Anuncio" asp-action="Create">Anúncio</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Anuncio" asp-action="Index">Anúncio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reserva" asp-action="Create">Reserva</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reserva" asp-action="Index">Reserva</a>
                         </li>
                     </ul>
                 </div>
@@ -50,15 +50,10 @@
         </nav>
     </header>
         
-<<<<<<< HEAD
-    <div class="conteiner body-content">
-        <main role="main" class="pb-3">
-=======
-        <main role="main" class="pb-3 bg">
->>>>>>> 8efee8bbec02d99d84068e31373cd9104457af61
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+  
 
     <footer class="border-top footer text-muted">
         <div class="container">

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
+    "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
   },
   "projects": {
-    "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
+    "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "projectUniqueName": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
         "projectName": "UmTempoEmCasa",
-        "projectPath": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-        "packagesPath": "C:\\Users\\gabi0\\.nuget\\packages\\",
-        "outputPath": "D:\\RECODE PRO\\UmTempoEmCasa\\obj\\",
+        "projectPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "packagesPath": "C:\\Users\\Romullo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gabi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Romullo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -27,13 +27,13 @@
     }
 </style>
 
-<div style="left: 10px;">
+<div style="padding-left: 10px;">
 
     <h1>Editar</h1>
     <h4>Anúncio</h4>
     <hr />
 
-    <div class="row" style="text-align:center;">
+    <div class="container" style="text-align:center;">
         <div class="col-md-offset-3">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -67,6 +67,7 @@
         <a asp-action="Index"><b>Voltar para a Lista</b></a>
     </div>
 </div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
