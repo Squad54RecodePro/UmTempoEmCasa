@@ -2,7 +2,325 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- BANNER -->
+    <img src="~/banner.png" class="img-fluid" alt="Imagem responsiva">
+    <!-- FIM DO BANNER -->
+
+    <!-- CARROSSEL DE TESTEMUNHAS-->
+    <div class="container" id="testemunhas">
+        <h4>Conheça alguns depoimentos</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <div class="single-box">
+                                          <div class="img-area"><img src="~/inter.png" alt=""></div>
+                                          <div class="img-text">
+                                              <h2>Pessoa Um</h2>
+                                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam, deleniti ipsam enim atque beatae molestias officia possimus perferendis consequuntur sunt doloribus quae eveniet veritatis maiores quisquam aliquam placeat. Doloremque!</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area"><img src="~/inter.png" alt=""></div>
+                                        <div class="img-text">
+                                            <h2>Pessoa Dois</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam, deleniti ipsam enim atque beatae molestias officia possimus perferendis consequuntur sunt doloribus quae eveniet veritatis maiores quisquam aliquam placeat. Doloremque!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area"><img src="~/inter.png" alt=""></div>
+                                        <div class="img-text">
+                                            <h2>Pessoa Tres</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam, deleniti ipsam enim atque beatae molestias officia possimus perferendis consequuntur sunt doloribus quae eveniet veritatis maiores quisquam aliquam placeat. Doloremque!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area"><img src="~/inter.png" alt=""></div>
+                                        <div class="img-text">
+                                            <h2>Pessoa Quatro</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam, deleniti ipsam enim atque beatae molestias officia possimus perferendis consequuntur sunt doloribus quae eveniet veritatis maiores quisquam aliquam placeat. Doloremque!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="single-box">
+                                      <div class="img-area"><img src="~/inter.png" alt=""></div>
+                                      <div class="img-text">
+                                          <h2>Pessoa Cinco</h2>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam, deleniti ipsam enim atque beatae molestias officia possimus perferendis consequuntur sunt doloribus quae eveniet veritatis maiores quisquam aliquam placeat. Doloremque!</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="single-box">
+                                      <div class="img-area"><img src="~/inter.png" alt=""></div>
+                                      <div class="img-text">
+                                          <h2>Pessoa Seis</h2>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam, deleniti ipsam enim atque beatae molestias officia possimus perferendis consequuntur sunt doloribus quae eveniet veritatis maiores quisquam aliquam placeat. Doloremque!</p>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controle-carrossel">
+
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- FIM DO CARROSSEL DE TESTEMUNHAS-->
+
+    <!-- CARROSSEL DOS MEMBROS-->
+    <section id="equipe">
+        <div class="container my-3 py-5 text-center">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1>Nossa Equipe</h1>
+                    <p class="mt-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus animi ipsum,
+                        quod, nobis, explicabo unde delectus maxime voluptatum necessitatibus ullam. Assumenda quidem
+                        aut suscipit perspiciatis nostrum! Quas, ad tenetur!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="~/daia.jpg" alt="Daiane" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Daiane</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aperiam minus suscipit
+                                nam provident eum delectus laboriosam eveniet fugit cum, officia dolorem deserunt,
+                                nesciunt fuga incidunt saepe maiores praesentium mollitia!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-facebook">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-instagram">
+
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="~/gabi.jpg" alt="Gabriel" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Gabriel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aperiam minus suscipit
+                                nam provident eum delectus laboriosam eveniet fugit cum, officia dolorem deserunt,
+                                nesciunt fuga incidunt saepe maiores praesentium mollitia!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-facebook">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-instagram">
+
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="~/john.jpg" alt="Jhon" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>John</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aperiam minus suscipit
+                                nam provident eum delectus laboriosam eveniet fugit cum, officia dolorem deserunt,
+                                nesciunt fuga incidunt saepe maiores praesentium mollitia!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-facebook">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-instagram">
+
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="~/romullo.jpg" alt="Romulo" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Romulo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aperiam minus suscipit
+                                nam provident eum delectus laboriosam eveniet fugit cum, officia dolorem deserunt,
+                                nesciunt fuga incidunt saepe maiores praesentium mollitia!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-facebook">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-instagram">
+
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="~/alex.jpg" alt="Alex" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Alex</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aperiam minus suscipit
+                                nam provident eum delectus laboriosam eveniet fugit cum, officia dolorem deserunt,
+                                nesciunt fuga incidunt saepe maiores praesentium mollitia!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-facebook">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-instagram">
+
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="~/dani.jpg" alt="Dani" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Dani</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aperiam minus suscipit
+                                nam provident eum delectus laboriosam eveniet fugit cum, officia dolorem deserunt,
+                                nesciunt fuga incidunt saepe maiores praesentium mollitia!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-facebook">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fa fa-instagram">
+
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM DO CARROSSEL DOS MEMBROS-->
+
