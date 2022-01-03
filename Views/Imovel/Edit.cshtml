@@ -13,10 +13,14 @@
         height: 30px; 
         text-align: center;
         margin-left: 10px;
+        box-shadow: 0 0 0.2em gray;
     }
     a{
         text-decoration: none;
         font-size: 20px;
+    }
+    a:hover{
+        color: orangered;
     }
     .form-control:focus{
         border-color: orangered;
@@ -24,48 +28,51 @@
     }
 </style>
 
-<h1>Alterar</h1>
+<div style="padding-left: 10px;">
 
-<h4>Imóvel</h4>
-<hr />
-<div class="row">
-    <div class="col-md-offset-3">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ImovelID" />
-            <div class="col-sm-4">
-                <label asp-for="AnfitriaoForeignKey" class="form-label"></label>
-                <select asp-for="AnfitriaoForeignKey" class="form-control" asp-items="ViewBag.AnfitriaoForeignKey"></select>
-                <span asp-validation-for="AnfitriaoForeignKey" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="col-sm-4">
-                <label asp-for="Endereco" class="form-label"></label>
-                <input asp-for="Endereco" class="form-control" />
-                <span asp-validation-for="Endereco" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="col-sm-4">
-                <label asp-for="Cidade" class="form-label"></label>
-                <input asp-for="Cidade" class="form-control" />
-                <span asp-validation-for="Cidade" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="col-sm-4">
-                <label asp-for="Cep" class="form-label"></label>
-                <input asp-for="Cep" class="form-control" />
-                <span asp-validation-for="Cep" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="col-sm-4">
-                <input type="submit" value="Alterar" class="btn btn-success" />
-            </div>
-        </form>
+    <h1>Alterar</h1>
+    <h4>Imóvel</h4>
+    <hr />
+    
+    <div class="row" style="text-align:center;">
+        <div class="col-md-offset-3">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ImovelID" />
+                <div class="col-sm-4">
+                    <label asp-for="AnfitriaoForeignKey" class="form-label"></label>
+                    <select asp-for="AnfitriaoForeignKey" class="form-control" asp-items="ViewBag.AnfitriaoForeignKey"></select>
+                    <span asp-validation-for="AnfitriaoForeignKey" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="col-sm-4">
+                    <label asp-for="Endereco" class="form-label"></label>
+                    <input asp-for="Endereco" class="form-control" />
+                    <span asp-validation-for="Endereco" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="col-sm-4">
+                    <label asp-for="Cidade" class="form-label"></label>
+                    <input asp-for="Cidade" class="form-control" />
+                    <span asp-validation-for="Cidade" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="col-sm-4">
+                    <label asp-for="Cep" class="form-label"></label>
+                    <input asp-for="Cep" class="form-control" />
+                    <span asp-validation-for="Cep" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="col-sm-4">
+                    <input type="submit" value="Alterar" class="btn btn-success" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-<hr />
-<div>
-    <a asp-action="Index"><b>Voltar para a Lista</b></a>
+    <hr />
+    <div>
+        <a asp-action="Index"><b>Voltar para a Lista</b></a>
+    </div>
 </div>
 
 @section Scripts {

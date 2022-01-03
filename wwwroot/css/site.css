@@ -21,7 +21,12 @@ body {
     font-weight: 400, 500, 700;
     height: 100%;
 }
-
+/*Alteração Romullo*/
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*******************/
 .bg {
     height: 100%;
     background-image: url(~/bgimage.png);
