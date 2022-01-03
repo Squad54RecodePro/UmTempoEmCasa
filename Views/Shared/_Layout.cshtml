@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3 ">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">UmTempoEmCasa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
@@ -30,27 +30,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark"  asp-area="" asp-controller="Refugiado" asp-action="Index">Refugiado</a>
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Refugiado" asp-action="Create">Refugiado</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Anfitriao" asp-action="Index">Anfitrião</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Anfitriao" asp-action="Create">Anfitrião</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Imovel" asp-action="Index">Imóvel</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Imovel" asp-action="Create">Imóvel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Anuncio" asp-action="Index">Anúncio</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Anuncio" asp-action="Create">Anúncio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reserva" asp-action="Index">Reserva</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reserva" asp-action="Create">Reserva</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
-        <main role="main" class="pb-3">
+        
+        <main role="main" class="pb-3 bg">
             @RenderBody()
         </main>
    

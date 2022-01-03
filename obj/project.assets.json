@@ -9422,24 +9422,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Romullo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\gabi0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "projectUniqueName": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
       "projectName": "UmTempoEmCasa",
-      "projectPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-      "packagesPath": "C:\\Users\\Romullo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\obj\\",
+      "projectPath": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "packagesPath": "C:\\Users\\gabi0\\.nuget\\packages\\",
+      "outputPath": "D:\\RECODE PRO\\UmTempoEmCasa\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Romullo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\gabi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9505,13 +9500,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

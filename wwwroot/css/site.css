@@ -36,7 +36,7 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
     padding-left: 70px;
-    font-size: 30px;
+    font-size: 30px !important;
 }
 
 a {
@@ -156,7 +156,7 @@ button.accept-policy {
 
 
 
-/* CARROSSEL DE MEMBROS */
+/* MEMBROS */
 
 #equipe img {
     margin-top: -50px;

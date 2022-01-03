@@ -24,11 +24,10 @@
     }
 </style>
 
-<h1>Cadastrar</h1>
-
-<h4>Reserva</h4>
-<hr />
+<div class="container">
 <div class="row">
+<h1>Cadastrar</h1>
+<h4>Reserva</h4>
     <div class="col-md-offset-3">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -66,9 +65,10 @@
         </form>
     </div>
 </div>
-<hr />
+
 <div>
     <a asp-action="Index"><b>Voltar para a Lista</b></a>
+</div>
 </div>
 
 @section Scripts {
