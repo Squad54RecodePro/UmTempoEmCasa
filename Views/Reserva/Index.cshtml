@@ -4,56 +4,74 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a:hover{
+        color: orangered;
+    }
+</style>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Refugiados)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Anuncios)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateInicio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataFim)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Refugiados.CEP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Anuncios.AnuncioID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateInicio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataFim)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ReservaID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ReservaID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ReservaID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+
+    <h1>Lista de Reservas</h1>
+    <p>
+        <a asp-action="Create">Adicionar nova Reserva</a>
+    </p>
+    <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
+        <thead style="background-color: orangered; color: white;">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Refugiados)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Anuncios)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateInicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataFim)
+                </th>
+                <th style="background-color: black; color: white;">Alterar</th>
+                <th style="background-color: black; color: white;">Detalhes</th>
+                <th style="background-color: black; color: white;">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Refugiados.CEP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Anuncios.AnuncioID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataFim)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ReservaID">Alterar</a>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ReservaID">Detalhes</a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.ReservaID">Excluir</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

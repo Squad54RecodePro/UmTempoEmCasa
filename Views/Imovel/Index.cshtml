@@ -4,50 +4,68 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a:hover{
+        color: orangered;
+    }
+</style>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Anfitrioes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Endereco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cep)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Anfitrioes.CEP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cep)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ImovelID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ImovelID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ImovelID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+
+    <h1>Lista de Imóvel</h1>
+    <p>
+        <a asp-action="Create">Adicionar novo Imóvel</a>
+    </p>
+    <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
+        <thead style="background-color: orangered; color: white;">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Anfitrioes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cidade)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cep)
+                </th>
+                <th style="background-color: black; color: white;">Alterar</th>
+                <th style="background-color: black; color: white;">Detalhes</th>
+                <th style="background-color: black; color: white;">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Anfitrioes.CEP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cep)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ImovelID">Alterar</a>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ImovelID">Detalhes</a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.ImovelID">Excluir</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
