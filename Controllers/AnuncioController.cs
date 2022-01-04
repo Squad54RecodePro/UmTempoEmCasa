@@ -27,6 +27,12 @@ namespace UmTempoEmCasa.Controllers
             return View(await mVCContext.ToListAsync());
         }
 
+
+
+        public IActionResult Catalogo()
+        {
+            return View(Catalogo);
+        }
         // GET: Anuncio/Details/5
         public async Task<IActionResult> Details(int? id)
         {
