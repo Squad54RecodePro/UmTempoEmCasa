@@ -51,7 +51,7 @@ namespace UmTempoEmCasa.Controllers
         public IActionResult Create()
         {
             ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID");
-            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "CEP");
+            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome");
             return View();
         }
 
@@ -69,7 +69,7 @@ namespace UmTempoEmCasa.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID", reserva.AnuncioForeignKey);
-            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "CEP", reserva.RefugiadoForeignKey);
+            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome", reserva.RefugiadoForeignKey);
             return View(reserva);
         }
 
@@ -87,7 +87,7 @@ namespace UmTempoEmCasa.Controllers
                 return NotFound();
             }
             ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID", reserva.AnuncioForeignKey);
-            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "CEP", reserva.RefugiadoForeignKey);
+            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome", reserva.RefugiadoForeignKey);
             return View(reserva);
         }
 
@@ -124,7 +124,7 @@ namespace UmTempoEmCasa.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID", reserva.AnuncioForeignKey);
-            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "CEP", reserva.RefugiadoForeignKey);
+            ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome", reserva.RefugiadoForeignKey);
             return View(reserva);
         }
 

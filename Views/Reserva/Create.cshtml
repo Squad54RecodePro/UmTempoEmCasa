@@ -15,12 +15,12 @@
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="col-sm-4">
-                    <label asp-for="RefugiadoForeignKey" class="form-label"></label>
+                    <label asp-for="RefugiadoForeignKey" class="form-label">Nome do Refugiado</label>
                     <select asp-for="RefugiadoForeignKey" class ="form-control" asp-items="ViewBag.RefugiadoForeignKey"></select>
                 </div>
                 <br />
                 <div class="col-sm-4">
-                    <label asp-for="AnuncioForeignKey" class="form-label"></label>
+                    <label asp-for="AnuncioForeignKey" class="form-label">ID do Anúncio</label>
                     <select asp-for="AnuncioForeignKey" class ="form-control" asp-items="ViewBag.AnuncioForeignKey"></select>
                 </div>
                 <br />

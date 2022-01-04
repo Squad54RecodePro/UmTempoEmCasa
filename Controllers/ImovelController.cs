@@ -49,7 +49,7 @@ namespace UmTempoEmCasa.Controllers
         // GET: Imovel/Create
         public IActionResult Create()
         {
-            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "CEP");
+            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "Nome");
             return View();
         }
 
@@ -66,7 +66,7 @@ namespace UmTempoEmCasa.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "CEP", imovel.AnfitriaoForeignKey);
+            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "Nome", imovel.AnfitriaoForeignKey);
             return View(imovel);
         }
 
@@ -83,7 +83,7 @@ namespace UmTempoEmCasa.Controllers
             {
                 return NotFound();
             }
-            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "CEP", imovel.AnfitriaoForeignKey);
+            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "Nome", imovel.AnfitriaoForeignKey);
             return View(imovel);
         }
 
@@ -119,7 +119,7 @@ namespace UmTempoEmCasa.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "CEP", imovel.AnfitriaoForeignKey);
+            ViewData["AnfitriaoForeignKey"] = new SelectList(_context.Anfitrioes, "AnfitriaoID", "Nome", imovel.AnfitriaoForeignKey);
             return View(imovel);
         }
 

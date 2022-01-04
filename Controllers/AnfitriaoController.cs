@@ -61,7 +61,7 @@ namespace UmTempoEmCasa.Controllers
             {
                 _context.Add(anfitriao);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Create", "Imovel");
             }
             return View(anfitriao);
         }
