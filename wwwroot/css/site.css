@@ -185,6 +185,36 @@ button.accept-policy {
         #equipe .card:hover h3, #equipe .card:hover i {
             color: #fff;
         }
+/* CARD ANUNCIO */
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#anuncio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    #anuncio button:hover {
+        color: orangered;
+        background-color: black;
+    }
+
+.img-square-wrapper {
+    border-radius: 10%;
+}
+
+#anuncio .img-square-wrapper:hover {
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #9e9e9e;
+}
+
+#anuncio .card-footer {
+    background-color: transparent;
+}
 
 /* FOOTER */
 

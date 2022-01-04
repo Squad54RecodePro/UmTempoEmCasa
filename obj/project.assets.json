@@ -9422,19 +9422,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jcley\\.nuget\\packages\\": {}
+    "C:\\Users\\gabi0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "projectUniqueName": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
       "projectName": "UmTempoEmCasa",
-      "projectPath": "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-      "packagesPath": "C:\\Users\\jcley\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jcley\\Desktop\\UmTempoEmCasa\\obj\\",
+      "projectPath": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "packagesPath": "C:\\Users\\gabi0\\.nuget\\packages\\",
+      "outputPath": "D:\\RECODE PRO\\UmTempoEmCasa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jcley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
