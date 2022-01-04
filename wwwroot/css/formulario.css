@@ -23,3 +23,11 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 69, 0, 25);
 }
 
+.formulario thead {
+    font-size: 20px;
+    background-color: orangered;
+    color: white;
+}
+.formulario tbody {
+    font-size: 20px;
+}

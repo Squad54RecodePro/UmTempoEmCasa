@@ -12,13 +12,10 @@
     </p>
 
     <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
-        <thead style="background-color: orangered; color: white;">
+        <thead class="formulario">
             <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Tipo)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Nascimento)
@@ -38,15 +35,6 @@
                 <th>
                     @Html.DisplayNameFor(model => model.CEP)
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CPF)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CNPJ)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Senha)
-                </th>
                 <th style="background-color: black; color: white;">Alterar</th>
                 <th style="background-color: black; color: white;">Detalhes</th>
                 <th style="background-color: black; color: white;">Excluir</th>
@@ -57,9 +45,6 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Tipo)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Nascimento)
@@ -78,15 +63,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.CEP)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CPF)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CNPJ)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Senha)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.AnfitriaoID">Alterar</a>
