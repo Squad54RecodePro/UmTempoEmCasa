@@ -9422,19 +9422,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daia_\\.nuget\\packages\\": {}
+    "C:\\Users\\Romullo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "projectUniqueName": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
       "projectName": "UmTempoEmCasa",
-      "projectPath": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-      "packagesPath": "C:\\Users\\daia_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\obj\\",
+      "projectPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "packagesPath": "C:\\Users\\Romullo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\daia_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Romullo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

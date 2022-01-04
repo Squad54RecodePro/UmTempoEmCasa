@@ -4,10 +4,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>Anfitriao</h4>
+<div class="container formulario">
+    <h1>Detalhes</h1>
+    <h4>Anfitrião</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -77,8 +76,9 @@
             @Html.DisplayFor(model => model.Senha)
         </dd>
     </dl>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.AnfitriaoID">ALterar</a> |
+        <a asp-action="Index">Voltar para a Lista</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.AnfitriaoID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
