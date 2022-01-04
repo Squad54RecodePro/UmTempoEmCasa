@@ -39,7 +39,7 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="ReservaID" />
                 <div class="col-sm-4">
-                    <label asp-for="RefugiadoForeignKey" class="form-label"></label>
+                    <label asp-for="RefugiadoForeignKey" class="form-label">Nome do Refugiado</label>
                     <select asp-for="RefugiadoForeignKey" class="form-control" asp-items="ViewBag.RefugiadoForeignKey"></select>
                     <span asp-validation-for="RefugiadoForeignKey" class="text-danger"></span>
                 </div>

@@ -13,7 +13,7 @@ namespace UmTempoEmCasa.Models
         public int RefugiadoForeignKey { get; set; }
         public Refugiado? Refugiados { get; set; }
 
-
+        [Display(Name = "ID do Anúncio")]
         public int AnuncioForeignKey { get; set; }
         public Anuncio? Anuncios { get; set; }
 

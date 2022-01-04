@@ -58,12 +58,10 @@ namespace UmTempoEmCasa.Models
 
         [MaxLength(11, ErrorMessage = "Quantidade de carateres maior que o permitido")]
         [MinLength(11, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
-        [Display(Name = "Documento de identificação")]
         public string? CPF { get; set; }
 
         [MaxLength(14, ErrorMessage = "Quantidade de carateres maior que o permitido")]
         [MinLength(14, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
-        [Display(Name = "Documento de identificação")]
         public string? CNPJ { get; set; }
 
         [StringLength(10, MinimumLength = 4)]
