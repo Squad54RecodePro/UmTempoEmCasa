@@ -23,7 +23,7 @@ namespace UmTempoEmCasa.Models
         [Display(Name = "Tipo")]
         public string Tipo { get; set; }
 
-        [DisplayFormat(DataFormatString = "mm/dd/yyyy")]
+        
         [Display(Name = "Data de Nascimento")]
         public DateTime? Nascimento { get; set; }
 
