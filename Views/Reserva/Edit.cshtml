@@ -11,41 +11,41 @@
     <hr />
     
     <div class="container" style="text-align:center;">
-        <div class="col-md-offset-3">
+        <div class="row">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="ReservaID" />
-                <div class="col-sm-4">
+                <div class="col-md-6 offset-md-3">
                     <label asp-for="RefugiadoForeignKey" class="form-label">Nome do Refugiado</label>
                     <select asp-for="RefugiadoForeignKey" class="form-control" asp-items="ViewBag.RefugiadoForeignKey"></select>
                     <span asp-validation-for="RefugiadoForeignKey" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-sm-4">
+                <div class="col-md-6 offset-md-3">
                     <label asp-for="AnuncioForeignKey" class="form-label"></label>
                     <select asp-for="AnuncioForeignKey" class="form-control" asp-items="ViewBag.AnuncioForeignKey"></select>
                     <span asp-validation-for="AnuncioForeignKey" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-sm-4">
+                <div class="col-md-6 offset-md-3">
                     <label asp-for="Nome" class="form-label"></label>
                     <input asp-for="Nome" class="form-control" />
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-sm-4">
+                <div class="col-md-6 offset-md-3">
                     <label asp-for="DateInicio" class="form-label"></label>
                     <input asp-for="DateInicio" class="form-control" />
                     <span asp-validation-for="DateInicio" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-sm-4">
+                <div class="col-md-6 offset-md-3">
                     <label asp-for="DataFim" class="form-label"></label>
                     <input asp-for="DataFim" class="form-control" />
                     <span asp-validation-for="DataFim" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-sm-4">
+                <div class="col-md-6 offset-md-3">
                     <input type="submit" value="Alterar" class="btn btn-success" />
                 </div>
             </form>
