@@ -20,7 +20,7 @@ namespace UmTempoEmCasa.Models
 
         [Required(ErrorMessage = "É necessário possuir um CPF para se cadastrar, verifique o link de acesso disponibilizado ao lado")]
         [MaxLength(11, ErrorMessage = "Quantidade de carateres maior que o permitido")]
-        [MinLength(11, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
+        [MinLength(11, ErrorMessage = "Esse número de CPF é muito curto, verifique e tente novamente")]
         public string CPF { get; set; }
 
         [Required(ErrorMessage = "Preencha o campo Telefone para continuar")]
