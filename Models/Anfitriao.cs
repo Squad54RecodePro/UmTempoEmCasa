@@ -35,7 +35,7 @@ namespace UmTempoEmCasa.Models
 
         [Required(ErrorMessage = "Preencha o campo E-mail para continuar")]
         [MaxLength(50, ErrorMessage = "Máximo de caracteres excedido")]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage ="Preencha um E-mail válido!")]
         [Display(Name = "E-mail")]
         public string Email { get; set; }
 
@@ -57,14 +57,14 @@ namespace UmTempoEmCasa.Models
         public string CEP { get; set; }
 
         [MaxLength(11, ErrorMessage = "Quantidade de carateres maior que o permitido")]
-        [MinLength(11, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
+        [MinLength(11, ErrorMessage = "Esse CPF é muito curto, verifique e tente novamente")]
         public string? CPF { get; set; }
 
         [MaxLength(14, ErrorMessage = "Quantidade de carateres maior que o permitido")]
-        [MinLength(14, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
+        [MinLength(14, ErrorMessage = "Esse CNPJ é muito curto, verifique e tente novamente")]
         public string? CNPJ { get; set; }
 
-        [StringLength(10, MinimumLength = 4)]
+        [StringLength(10, MinimumLength = 4, ErrorMessage ="Senha muito curta")]
         [Required(ErrorMessage = "Insira sua senha")]
         [Display(Name = "Senha")]
         public string Senha { get; set; }

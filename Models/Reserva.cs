@@ -17,7 +17,7 @@ namespace UmTempoEmCasa.Models
         public int AnuncioForeignKey { get; set; }
         public Anuncio? Anuncios { get; set; }
 
-
+        [Required(ErrorMessage ="Insira um nome para o anuncio")]
         public string Nome { get; set; }
 
 

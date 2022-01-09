@@ -30,7 +30,7 @@ namespace UmTempoEmCasa.Models
 
         [Required(ErrorMessage = "Preencha o campo E-mail para continuar")]
         [MaxLength(50, ErrorMessage = "Máximo de caracteres excedido")]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage ="Insira um E-mail válido!")]
         [Display(Name = "E-mail")]
         public string Email { get; set; }
 
