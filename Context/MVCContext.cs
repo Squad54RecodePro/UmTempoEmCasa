@@ -18,8 +18,13 @@ namespace UmTempoEmCasa.Context
 
         public DbSet<Refugiado> Refugiados { get; set; }
 
+        public DbSet<Ongs> Ongs { get; set; }
+
         public DbSet<Reserva> Reservas { get; set; }
+
         public DbSet<Contato> Contatos { get; set; }
+
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
