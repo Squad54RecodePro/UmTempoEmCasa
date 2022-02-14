@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
+    "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
+    "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "projectUniqueName": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
         "projectName": "UmTempoEmCasa",
-        "projectPath": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-        "packagesPath": "C:\\Users\\daia_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\obj\\",
+        "projectPath": "D:\\RECODE PRO\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "packagesPath": "C:\\Users\\gabi0\\.nuget\\packages\\",
+        "outputPath": "D:\\RECODE PRO\\UmTempoEmCasa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\daia_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
