@@ -22,10 +22,12 @@ namespace UmTempoEmCasa.Models
         [Required(ErrorMessage = "Para prosseguir com o cadastro selecione PF ou PJ")]
         [Display(Name = "Tipo")]
         public string Tipo { get; set; }
-
-        
+       
+        [Required(ErrorMessage = "Preencha a Data de Nascimento")]
         [Display(Name = "Data de Nascimento")]
-        public DateTime? Nascimento { get; set; }
+        [DataType(DataType.Date)]
+
+        public DateTime Nascimento { get; set; }
 
         [Required(ErrorMessage = "Preencha o campo Telefone para continuar")]
         [MaxLength(11, ErrorMessage = "Preencha apenas o DDD e o número de telefone")]
