@@ -76,12 +76,18 @@
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Senha" class="form-label"></label>
-                    <input asp-for="Senha" type="password" class="form-control" />
-                    <span asp-validation-for="Senha" class="text-danger"></span>
+                    <input id="password" asp-for="Senha"  type="password" class="form-control" />
+                    <span  asp-validation-for="Senha" class="text-danger"></span>
+                                        
+                </div>
+                <div class="col-md-6 offset-md-3">
+                    <label asp-for="Senha" class="form-label">Digite a Senha novamente</label>
+                    <input id="confirm_password" onChange="validatePassword()" type="password" class="form-control" />
+                    <span id="alerta" ></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <input type="submit" value="Cadastrar" class="btn btn-success" />
+                    <input type="submit" id="botaobloqueado" value="Cadastrar" class="btn btn-success" />
                 </div>
             </form>
         </div>
@@ -92,6 +98,32 @@
     </div>
 </div>
 
+<script>
+   
+   document.getElementById("botaobloqueado").disabled=true;
+
+    function validatePassword(){
+        var password = document.getElementById("password").value;
+        var confirm_password = document.getElementById("confirm_password").value;
+
+      console.log(password);
+      console.log(confirm_password);
+
+       if(password == confirm_password) {
+
+            document.getElementById("alerta").innerHTML="Senhas Iguais";
+            document.getElementById("botaobloqueado").disabled=false;
+
+
+        } else {
+            document.getElementById("alerta").innerHTML="Senhas diferentes";
+        }
+      
+}
+
+        
+    
+    </script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
