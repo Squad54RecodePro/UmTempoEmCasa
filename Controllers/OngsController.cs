@@ -20,28 +20,9 @@ namespace UmTempoEmCasa.Controllers
             _context = context;
         }
 
-        // GET: Anfitriao
         public async Task<IActionResult> Index()
         {
             return View(await _context.Ongs.ToListAsync());
-        }
-
-        // GET: Anfitriao/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var ongs = await _context.Ongs
-                .FirstOrDefaultAsync(m => m.OngsID == id);
-            if (ongs == null)
-            {
-                return NotFound();
-            }
-
-            return View(ongs);
         }
 
         // GET: ONGs/Create
@@ -61,7 +42,7 @@ namespace UmTempoEmCasa.Controllers
             {
                 _context.Add(ongs);
                 await _context.SaveChangesAsync();
-                return NotFound();
+                return RedirectToAction(nameof(Index));
             }
             return View(ongs);
         }

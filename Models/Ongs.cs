@@ -14,7 +14,7 @@ namespace UmTempoEmCasa.Models
         [Required(ErrorMessage = "Insira o nome da Ong")]
         [MaxLength(50, ErrorMessage = "Quantidade de carateres maior que o permitido")]
         [MinLength(2, ErrorMessage = "Esse Nome é muito curto, verifique e tente novamente")]
-        [Display(Name = "Nome Completo")]
+        [Display(Name = "Nome")]
 
         public string Nome { get; set; }
 
@@ -22,7 +22,7 @@ namespace UmTempoEmCasa.Models
         [MaxLength(14, ErrorMessage = "Quantidade de carateres maior que o permitido")]
         [MinLength(14, ErrorMessage = "Esse CNPJ é muito curto, verifique e tente novamente")]
 
-        public string? CNPJ { get; set; }
+        public string CNPJ { get; set; }
 
 
         [Required(ErrorMessage = "Preencha o campo endereço")]

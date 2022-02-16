@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
+    "C:\\Users\\jcley\\Desktop\\SUBIRGITSQUAD\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
+    "C:\\Users\\jcley\\Desktop\\SUBIRGITSQUAD\\UmTempoEmCasa\\UmTempoEmCasa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "projectUniqueName": "C:\\Users\\jcley\\Desktop\\SUBIRGITSQUAD\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
         "projectName": "UmTempoEmCasa",
-        "projectPath": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-        "packagesPath": "C:\\Users\\daia_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daia_\\Desktop\\UmTempoEmCasa\\obj\\",
+        "projectPath": "C:\\Users\\jcley\\Desktop\\SUBIRGITSQUAD\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+        "packagesPath": "C:\\Users\\jcley\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jcley\\Desktop\\SUBIRGITSQUAD\\UmTempoEmCasa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\daia_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jcley\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
