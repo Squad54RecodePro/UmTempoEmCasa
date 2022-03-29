@@ -13,7 +13,7 @@
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="AnfitriaoForeignKey" class="form-label">Anfitrião número do cadastro :</label>
+                    <label asp-for="AnfitriaoForeignKey" class="form-label">Nome do Anfitrião :</label>
                     <select asp-for="AnfitriaoForeignKey" class ="form-control" asp-items="ViewBag.AnfitriaoForeignKey"></select>
                 </div>
                 <br />
@@ -45,7 +45,7 @@
     </div>
     <br />
     <div style="padding-bottom: 40px; padding-top:30px;">
-        <a asp-action="Index" style="color:white">Acessar a lista de Imóvel</a>
+        <a style="color:white" asp-action="Index" >Acessar a lista de Imóvel</a>
     </div>
 </div>
 

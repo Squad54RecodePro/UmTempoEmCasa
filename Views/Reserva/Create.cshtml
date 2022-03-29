@@ -6,7 +6,7 @@
 
 <div class="formulario" style="padding-left: 10px;">
 
-    <h3 style="text-align:center;">Faça sua reserva</h3>
+    <h3 style="text-align:center;">Faça sua Reserva</h3>
 
     <div class="container">
         <div class="row">
@@ -20,12 +20,6 @@
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="AnuncioForeignKey" class="form-label">Nome do Anúncio :</label>
                     <select asp-for="AnuncioForeignKey" class ="form-control" asp-items="ViewBag.AnuncioForeignKey"></select>
-                </div>
-                <br />
-                <div class="col-md-6 offset-md-3">
-                    <label asp-for="Nome" class="form-label">Nome :</label>
-                    <input asp-for="Nome" class="form-control" placeholder="Insira seu nome*"/>
-                    <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
@@ -48,8 +42,8 @@
             </form>
         </div>
     </div>
-    <hr />
-    <div>
+    <br />
+    <div  style="padding-bottom: 40px; padding-top:30px;">
         <a asp-action="Index" style="color:white;">Acessar a lista de Reserva</a>
     </div>
 </div>

@@ -4,35 +4,39 @@
     ViewData["Title"] = "Details";
 }
 
-<div class="row formulario">
+<div class="formulario">
     
     <h3 style="text-align: center;">Detalhes do Anúncio</h3>
 
     <div class="container" style="padding-top: 30px; padding-left: 40px;">
        
-        <label class="col-sm-2">CEP</label>
+        <label class="col-sm-2"><b>CEP :</b></label>
         <br />
         <label class = "col-sm-10">
             @Html.DisplayFor(model => model.Imovel.Cep)
         </label>
         <br /><br />
-        <label class="col-sm-2">Disponível apartir de</label>
+
+        <label class="col-sm-2"><b>Disponível apartir de</b></label>
         <br />
         <label class = "col-sm-10">
             @Html.DisplayFor(model => model.inicio)
         </label>
         <br /><br />
-        <label class="col-sm-2">Valor</label>
+
+        <label class="col-sm-2"><b>Valor :</b></label>
         <br/>
         <label class = "col-sm-10">R$
             @Html.DisplayFor(model => model.valor)
         </label>
-       
+    
+        <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
+            <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.AnuncioID">Alterar</a> 
+            <a class="btn btn-warning" asp-action="Index">Voltar para a Lista</a>
+        </div>
+        
     </div>
-    <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
-        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.AnuncioID">Alterar</a> 
-        <a class="btn btn-warning" asp-action="Index">Voltar para a Lista</a>
-    </div>
+    
  </div>
 
 

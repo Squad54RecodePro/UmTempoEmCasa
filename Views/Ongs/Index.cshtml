@@ -4,13 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-<div class="row formulario">
+<div class="formulario">
 
     <h3 style="text-align: center; margin-top: 40px; ">Lista de ONGs</h3>
+
     <p style="padding-top: 20px; padding-bottom: 20px;">
-        <a style="color: white"; padding-left: 15px asp-action="Create"><u>Adicionar nova ONG</u></a>
+        <a style="color: white; padding-left: 15px" asp-action="Create"><u>Adicionar nova ONG</u></a>
     </p>
 
+    <div class="table-responsive">
     <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
         <thead class="formulario">
             <tr>
@@ -93,4 +95,5 @@
     }
         </tbody>
     </table>
+    </div>
 </div>

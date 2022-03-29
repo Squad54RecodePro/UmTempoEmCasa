@@ -4,37 +4,41 @@
     ViewData["Title"] = "Details";
 }
 
-<div class="row formulario">
+<div class="formulario">
     <h3 style="text-align: center;">Detalhes do Contato</h3>
   
-    <dl class="container" style="padding-top: 30px; padding-left: 40px;">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
+    <div class="container" style="padding-top: 30px; padding-left: 40px;">
+        
+        <label class = "col-sm-2"><b>Nome :</b></label>
+        <br />
+        <label class = "col-sm-10">
             @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Email :</b></label>
+        <br />
+        <label class = "col-sm-10">
             @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.assunto)
-        </dt>
-        <dd class = "col-sm-10">
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Assunto :</b></label>
+        <br />
+        <label class = "col-sm-10">
             @Html.DisplayFor(model => model.assunto)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.mensagem)
-        </dt>
-        <dd class = "col-sm-10">
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Mensagem :</b></label>
+        <br />
+        <label class = "col-sm-10">
             @Html.DisplayFor(model => model.mensagem)
-        </dd>
-    </dl>
+        </label>
+
+    </div>
     <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
-        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.Id">Alterar</a> |
+        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.Id">Alterar</a> 
         <a class="btn btn-warning" asp-action="Index">Voltar para a Lista</a>
     </div>
 </div>
