@@ -6,8 +6,19 @@
 
 <!-- BANNER -->
         <img src="~/banner2.png" class="img-fluid" alt="Imagem responsiva">
-        <div class="container text-center p-4">
-        <a asp-controller="Anuncio" asp-action="Create"><button type="button" class="btn btn-outline-dark">Criar Anúncio</button></a> 
+        <div class="container">
+                <div class="box">
+        <input type="checkbox" id="check">
+        <div class="search-box">
+            <input type="text" placeholder="Digite sua cidade...">
+            <label for="check" class="icon">
+                <i class="fas fa-search"></i>
+            </label>
+        </div>
+    </div>
+            <div class="container text-center p-4">
+        <a asp-controller="Anuncio" asp-action="Create"><button type="button" class="btn btn-outline-warning">Criar Anúncio</button></a> 
+        </div>
         </div>
         <!-- FIM DO BANNER -->
     <div class="container">

@@ -1,7 +1,7 @@
 
 @media (min-width: 768px) {
     html {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -15,12 +15,20 @@ header {
     padding-bottom: 25px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     margin-bottom: 60px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400, 500, 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200, 250, 350;
     height: 100%;
 }
+
 /*Alteração Romullo*/
 .body-content {
     padding-left: 15px;
@@ -208,5 +216,76 @@ button.accept-policy {
     border: none;
 }
 /* FOOTER */
+
+/* SEARCH BOX */
+.box {
+    max-width: auto;
+    width: 100%;
+    position: center;
+    margin-top: 20px;
+}
+
+    .box .search-box {
+        position: relative;
+        height: 50px;
+        max-width: 50px;
+        margin: auto;
+        box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.25);
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    color: yellowgreen;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#check {
+    display: none;
+}
+
+
+    #check:checked ~ .search-box {
+        max-width: 380px;
+    }
+
+
+
+.search-box .icon {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: orangered;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 25px;
+}
+
+#check:checked ~ .search-box .icon {
+    background: orange;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    width: 60px;
+}
+
+/* BOTÃO */
+
+.btn {
+    border-radius: 25px 25px 25px 25px;
+    color: orangered;
+}
+
 
 
