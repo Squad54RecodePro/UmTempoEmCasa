@@ -61,7 +61,7 @@ namespace UmTempoEmCasa.Controllers
             {
                 _context.Add(refugiado);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Catalogo", "Anuncio");
+                return RedirectToAction("Index", "Anuncio");
             }
             return View(refugiado);
         }
