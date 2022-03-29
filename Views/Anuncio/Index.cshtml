@@ -4,52 +4,32 @@
     ViewData["Title"] = "Index";
 }
 
-<div class="container formulario">
-
-    <h1>Lista de Anúncios</h1>
-    <p>
-        <a asp-action="Create">Adicionar novo Anúncio</a>
-    </p>
-    <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
-        <thead class="formulario">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Imovel)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.inicio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.valor)
-                </th>
-                <th>Alterar</th>
-                <th>Detalhes</th>
-                <th>Excluir</th>
-            </tr>
-        </thead>
-        <tbody>
-    @foreach (var item in Model) {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Imovel.Cep)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.inicio)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.valor)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.AnuncioID">Alterar</a>
-                </td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.AnuncioID">Detalhes</a> 
-                </td>
-                <td>
-                    <a asp-action="Delete" asp-route-id="@item.AnuncioID">Excluir</a>
-                </td>
-            </tr>
-    }
-        </tbody>
-    </table>
-</div>
+<!-- BANNER -->
+        <img src="~/banner2.png" class="img-fluid" alt="Imagem responsiva">
+        <div class="container text-center p-4">
+        <a asp-controller="Anuncio" asp-action="Create"><button type="button" class="btn btn-outline-dark">Criar Anúncio</button></a> 
+        </div>
+        <!-- FIM DO BANNER -->
+    <div class="container">
+        
+            <div class="col-12 col-md-6 col-lg-4">
+                @foreach (var item in Model){
+                <div class="card border-0">
+                    <div class="img-square-wrapper">
+                        <a href="www.google.com">
+                            <img src="http://via.placeholder.com/300x180" alt="" class="card-img-top" href="google.com" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nome: @Html.DisplayFor(modelItem => item.Imovel.Cep)</h5>
+                        <p class="class-text">Data de Cadastro: @Html.DisplayFor(modelItem => item.inicio)</p>
+                        <p class="class-text">R$ @Html.DisplayFor(modelItem => item.valor)</p>
+                        <a asp-action="Details" asp-route-id="@item.AnuncioID"><Button>Detalhes</Button></a> 
+                        <button>Comprar</button>
+                    </div>
+                    
+                    
+                </div>}
+            </div>
+        </div>
+    </div>
