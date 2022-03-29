@@ -103,11 +103,11 @@ button.accept-policy {
 
     #testemunhas .img-text {
         width: 100%;
-        height: 400px;
+        height: auto;
         display: block;
         text-align: center;
         padding: 40% 5%;
-        background: orangered;
+        background: rgb(255,108,39);
         color: black;
         border-radius: 15px;
     }
@@ -117,6 +117,7 @@ button.accept-policy {
         }
 
         #testemunhas .img-text h2 {
+            margin-top: 40px;
             font-size: 25px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -134,7 +135,7 @@ button.accept-policy {
         border: 5px solid #fff;
         overflow: hidden;
         top: 15px;
-        left: 150px;
+        left: 100px;
         border-radius: 50%;
     }
 
@@ -172,10 +173,14 @@ button.accept-policy {
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
+    background-color: #ff6b2748;
+    height: auto;
+    margin-top:20px;
+
 }
 
     #equipe .card:hover {
-        background: #e74c3c;
+        background: rgb(255,108,39);
         color: #fff;
         border-radius: 5px;
         border: none;

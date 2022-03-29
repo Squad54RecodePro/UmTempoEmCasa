@@ -8,181 +8,181 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UmTempoEmCasa
 build_property.RootNamespace = UmTempoEmCasa
-build_property.ProjectDir = C:\Users\jcley\Desktop\SUBIRGITSQUAD\UmTempoEmCasa\
+build_property.ProjectDir = C:\Users\Romullo\Desktop\UmTempoEmCasa-Final\UmTempoEmCasa\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jcley\Desktop\SUBIRGITSQUAD\UmTempoEmCasa
+build_property.MSBuildProjectDirectory = C:\Users\Romullo\Desktop\UmTempoEmCasa-Final\UmTempoEmCasa
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anfitriao/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anfitriao/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anfitriao/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anfitriao/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anfitriao/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anfitriao/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anfitriao/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anfitriao/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anfitriao/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anfitriao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5maXRyaWFvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anuncio/Catalogo.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anuncio/Catalogo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xDYXRhbG9nby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anuncio/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anuncio/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anuncio/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anuncio/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anuncio/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anuncio/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anuncio/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anuncio/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Anuncio/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Anuncio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Contatos/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Contatos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Contatos/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Contatos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Contatos/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Contatos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Contatos/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Contatos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Contatos/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Contatos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Home/Contato.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Home/Contato.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Home/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Imovel/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Imovel/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Imovel/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Imovel/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Imovel/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Imovel/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Imovel/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Imovel/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Imovel/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Imovel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Ongs/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Ongs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT25nc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Ongs/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Ongs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT25nc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Ongs/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Ongs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT25nc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Ongs/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Ongs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT25nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Ongs/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Ongs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT25nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Refugiado/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Refugiado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Refugiado/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Refugiado/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Refugiado/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Refugiado/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Refugiado/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Refugiado/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Refugiado/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Refugiado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Reserva/Create.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Reserva/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Reserva/Delete.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Reserva/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Reserva/Details.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Reserva/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Reserva/Edit.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Reserva/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Reserva/Index.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Reserva/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Shared/Error.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/_ViewImports.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/_ViewStart.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jcley/Desktop/SUBIRGITSQUAD/UmTempoEmCasa/Views/Shared/_Layout.cshtml]
+[C:/Users/Romullo/Desktop/UmTempoEmCasa-Final/UmTempoEmCasa/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ayebw2345a
