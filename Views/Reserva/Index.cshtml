@@ -6,10 +6,13 @@
 
 <div class="container formulario">
 
-    <h1>Lista de Reservas</h1>
-    <p>
-        <a asp-action="Create">Adicionar nova Reserva</a>
+    <h3 style="text-align: center; padding-top: 40px;">Lista de Reservas</h3>
+
+    <p class="container text-center p-4">
+        <a style="color: white;" asp-action="Create"><u>Adicionar nova Reserva</u></a>
     </p>
+
+    <div class="table-responsive">
     <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
         <thead class="formulario">
             <tr>
@@ -64,4 +67,5 @@
     }
         </tbody>
     </table>
+    </div>
 </div>

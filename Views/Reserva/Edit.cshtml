@@ -4,11 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<div class="formulario" style="padding-left: 10px;">
+<div class="row formulario" style="padding-left: 10px;">
     
-    <h1>Alterar</h1>
-    <h4>Reserva</h4>
-    <hr />
+    <h3 style="text-align: center; padding-top: 40px;">Alterar dados da Reserva</h3>
     
     <div class="container" style="text-align:center;">
         <div class="row">
@@ -28,7 +26,7 @@
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="Nome" class="form-label"></label>
+                    <label asp-for="Nome" class="form-label">Nome: </label>
                     <input asp-for="Nome" class="form-control" />
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>

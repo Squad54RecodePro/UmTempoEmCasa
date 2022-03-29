@@ -6,16 +6,14 @@
 
 <div class="formulario" style="padding-left: 10px;">
 
-    <h1>Criar</h1>
-    <h4>Anúncio</h4>
-    <hr />
+    <h3 style="text-align:center; padding-top: 40px;">Cadastrar um Anúncio</h3>
 
-    <div class="container" style="text-align:center;">
+    <div class="container">
         <div class="row">
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="ImovelForeignKey" class="form-label"></label>
+                    <label asp-for="ImovelForeignKey" class="form-label">CEP :</label>
                     <select asp-for="ImovelForeignKey" class ="form-control" asp-items="ViewBag.ImovelForeignKey"></select>
                 </div>
                 <br />
@@ -26,7 +24,7 @@
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="valor" class="form-label"></label>
+                    <label asp-for="valor" class="form-label">Valor :</label>
                     <input asp-for="valor" class="form-control" />
                     <span asp-validation-for="valor" class="text-danger"></span>
                 </div>
@@ -38,8 +36,8 @@
         </div>
     </div>
     <hr />
-    <div>
-        <a asp-action="Index"><b>Acessar a lista de Anúncios</b></a>
+    <div style="padding-bottom: 40px; padding-top:30px;">
+        <a style="color: white;" asp-action="Index"><b>Acessar a lista de Anúncios</b></a>
     </div>
 </div>
 

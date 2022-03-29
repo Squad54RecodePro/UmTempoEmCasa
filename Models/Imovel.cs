@@ -30,7 +30,7 @@ namespace UmTempoEmCasa.Models
         [Required(ErrorMessage = "Informe o CEP da localização do Imovel")]
         [MaxLength(11, ErrorMessage = "Maximo de caracteres excedido")]
         [MinLength(8, ErrorMessage = "Confira o CEP digitado, número minimo não atingido")]
-        [Display(Name = "Cep ( Código Postal )")]
+        [Display(Name = "CEP")]
         public string Cep { get; set; }
 
 

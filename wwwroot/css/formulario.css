@@ -1,12 +1,22 @@
-﻿
+﻿.formulario h3 {
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.formulario {
+    background-color: rgb(255,108,39);
+    color: white;
+}
+
+
 .formulario label {
-    background-color: orangered;
+    background-color: rgb(255,108,39);
     color: white;
     width: 260px;
     height: 30px;
-    text-align: center;
     margin-left: 10px;
-    box-shadow: 0 0 0.2em gray;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .formulario a {
@@ -15,8 +25,8 @@
 }
 
 .formulario a:hover {
-        color: orangered;
-    }
+    color: red;
+}
 
 .formulario .form-control:focus {
     border-color: orangered;
@@ -25,9 +35,19 @@
 
 .formulario thead {
     font-size: 20px;
-    background-color: orangered;
+    background-color: rgb(134, 77, 50);
     color: white;
 }
+
 .formulario tbody {
     font-size: 20px;
+}
+
+.btnForm a{
+    font-size:17px;
+    color: white;
+}
+
+.btnForm a:hover {
+    color:white;
 }

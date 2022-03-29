@@ -6,40 +6,41 @@
 
 <div class="formulario" style="padding-left: 10px;">
 
-    <h1>Adicionar</h1>
-    <h4>Contato</h4>
-    <hr />
-    <div class="container" style="text-align: center;">
+   
+    <h3>Entre em contato conosco</h3>
+    <div class="container">
         <div class="row">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="Nome" class="form-label"></label>
-                    <input asp-for="Nome" class="form-control" />
+                    <label asp-for="Nome" class="form-label">Nome :</label>
+                    <input asp-for="Nome" class="form-control" placeholder="Insira seu nome*"/>
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control" />
+                    <label asp-for="Email" class="form-label">E-mail:</label>
+                    <input asp-for="Email" class="form-control" placeholder="Insira seu e-mail*"/>
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="assunto" class="form-label"></label>
+                    <label asp-for="assunto" class="form-label">Assunto :</label>
                     <input asp-for="assunto" class="form-control" />
                     <span asp-validation-for="assunto" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <label asp-for="mensagem" class="form-label"></label>
-                    <textarea asp-for="mensagem" class="form-control">
+                    <label asp-for="mensagem" class="form-label">Mensagem</label>
+                    <textarea asp-for="mensagem" class="form-control" style="height: 200px;">
                     </textarea>
                     <span asp-validation-for="mensagem" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-md-6 offset-md-3">
+                <div class="col-md-6 offset-md-3 btnForm">
                     <input type="submit" value="Enviar" class="btn btn-success" />
+                
+                    <a class="btn btn-danger" asp-controller="Home" asp-action="Index" style="color:white;">Cancelar</a>
                 </div>
             </form>
         </div>

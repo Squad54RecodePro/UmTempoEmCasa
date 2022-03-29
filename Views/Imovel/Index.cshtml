@@ -6,10 +6,13 @@
 
 <div class="container formulario">
 
-    <h1>Lista de Imóvel</h1>
-    <p>
-        <a asp-action="Create">Adicionar novo Imóvel</a>
-    </p>
+    <h3 style="text-align: center; padding-top: 40px;">Lista de Imóvel</h3>
+
+    <div class="container text-center p-4">
+        <a style="color: white;" asp-controller="Anuncio" asp-action="Create" class="btn btn-outline-warning btnCriarAnuncio"><b>Criar Anúncio</b></a> 
+    </div>
+    
+    <div class="table-responsive">
     <table class="table table-sucess table-striped" style="background-color: white; text-align: center;">
         <thead class="formulario">
             <tr>
@@ -58,4 +61,5 @@
     }
         </tbody>
     </table>
+    </div>
 </div>

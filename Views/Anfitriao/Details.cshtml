@@ -4,11 +4,10 @@
     ViewData["Title"] = "Details";
 }
 
-<div class="container formulario">
-    <h1>Detalhes</h1>
-    <h4>Anfitrião</h4>
-    <hr />
-    <dl class="row">
+<div class="row formulario">
+    <h3 style="text-align: center; ">Detalhes do Anfitrião</h3>
+  
+      <dl class="container" style="padding-top: 30px; padding-left: 40px;">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
@@ -76,9 +75,9 @@
             @Html.DisplayFor(model => model.Senha)
         </dd>
     </dl>
-    <div>
-        <a asp-action="Edit" asp-route-id="@Model?.AnfitriaoID">ALterar</a> |
-        <a asp-action="Index">Voltar para a Lista</a>
+    <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
+        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.AnfitriaoID">Alterar</a> 
+        <a class="btn btn-warning" asp-action="Index">Voltar para a Lista</a>
     </div>
 </div>
 

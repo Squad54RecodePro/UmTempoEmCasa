@@ -4,13 +4,11 @@
     ViewData["Title"] = "Edit";
 }
 
-<div class="formulario" style="padding-left: 10px;">
+<div class="row formulario" style="padding-left: 10px;">
 
-    <h1>Alterar</h1>
-    <h4>ONGs</h4>
-    <hr />
+    <h3 style="text-align:center; padding-top: 40px;">Editar dados do Contato>Alterar ONGs</h3>
 
-    <div class="container" style="text-align:center;">
+    <div class="container">
         <div class="row">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -58,9 +56,9 @@
             </form>
         </div>
     </div>
-    <hr />
-    <div>
-        <a asp-action="Index"><b>Acessar Cadastros</b></a>
+    <br />
+    <div style="padding-bottom: 40px; padding-top:30px; padding-left: 20px;">
+        <a style="color: white" asp-action="Index"><b>Acessar Cadastros</b></a>
     </div>
 </div>
 
