@@ -9422,19 +9422,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabi0\\.nuget\\packages\\": {}
+    "C:\\Users\\Romullo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabi0\\OneDrive\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "projectUniqueName": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa-Final-data-29-03\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
       "projectName": "UmTempoEmCasa",
-      "projectPath": "C:\\Users\\gabi0\\OneDrive\\Desktop\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
-      "packagesPath": "C:\\Users\\gabi0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabi0\\OneDrive\\Desktop\\UmTempoEmCasa\\obj\\",
+      "projectPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa-Final-data-29-03\\UmTempoEmCasa\\UmTempoEmCasa.csproj",
+      "packagesPath": "C:\\Users\\Romullo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Romullo\\Desktop\\UmTempoEmCasa-Final-data-29-03\\UmTempoEmCasa\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gabi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Romullo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9497,7 +9502,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
