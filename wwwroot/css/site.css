@@ -110,14 +110,13 @@ button.accept-policy {
         display: block;
         text-align: center;
         padding: 40% 5%;
-        background: rgb(255,108,39);
-        color: white;
+        background: #ff6b2748;
+        color: black;
         border-radius: 15px;
     }
 
         #testemunhas .img-text p {
-            font-size: 20px;
-            text-shadow: black 0.1em 0.1em 0.2em;
+            font-size: 18px;
         }
 
         #testemunhas .img-text h2 {
@@ -125,7 +124,6 @@ button.accept-policy {
             font-size: 25px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: black 0.1em 0.1em 0.2em;
         }
 
     #testemunhas .single-box {
@@ -162,7 +160,7 @@ button.accept-policy {
     }
 
     .carousel-indicators .active {
-        background: orangered;
+        background: #ff6b2748;
     }
 
 
@@ -288,4 +286,8 @@ button.accept-policy {
 .btnCriarAnuncio {
     border-radius: 25px 25px 25px 25px;
     color: orangered;
+}
+
+.imgOngs {
+    width: 10px;
 }

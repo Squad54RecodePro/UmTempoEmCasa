@@ -113,10 +113,11 @@ namespace UmTempoEmCasa.Migrations
                 {
                     AnuncioID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeAnuncio = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImovelForeignKey = table.Column<int>(type: "int", nullable: false),
                     inicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     valor = table.Column<float>(type: "real", nullable: false),
-                    nomeimagem = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    nomeimagem = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImovelID1 = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
