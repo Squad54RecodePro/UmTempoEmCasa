@@ -1,8 +1,5 @@
-
-@media (min-width: 768px) {
-    html {
-        font-size: 17px;
-    }
+.linkMenu a {
+    font-size: 1.1em;
 }
 
 html {
