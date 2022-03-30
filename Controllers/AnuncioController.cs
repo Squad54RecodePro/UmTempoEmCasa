@@ -14,25 +14,25 @@ namespace UmTempoEmCasa.Controllers
     public class AnuncioController : Controller
     {
         private readonly MVCContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public AnuncioController(MVCContext context)
+        public AnuncioController(MVCContext context,IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            this._hostEnvironment = hostEnvironment;
         }
 
         // GET: Anuncio
         public async Task<IActionResult> Index()
         {
             var mVCContext = _context.Anuncios.Include(a => a.Imovel);
+
             return View(await mVCContext.ToListAsync());
         }
 
 
 
-        public IActionResult Catalogo()
-        {
-            return View(Catalogo);
-        }
+      
         // GET: Anuncio/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -64,12 +64,25 @@ namespace UmTempoEmCasa.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AnuncioID,ImovelForeignKey,inicio,valor")] Anuncio anuncio)
+        public async Task<IActionResult> Create([Bind("AnuncioID,ImovelForeignKey,inicio,valor,NomeAnuncio,ImagemAnuncio")] Anuncio anuncio)
         {
             if (ModelState.IsValid)
-            {
+            {   //inserir imagem
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string fileName = Path.GetFileNameWithoutExtension(anuncio.ImagemAnuncio.FileName);
+                string extension = Path.GetExtension(anuncio.ImagemAnuncio.FileName);
+                anuncio.nomeimagem = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                string path = Path.Combine(wwwRootPath + "/Image/", fileName);
+                using (var fileStream= new FileStream(path, FileMode.Create))
+                {
+                    await anuncio.ImagemAnuncio.CopyToAsync(fileStream);
+                }
+                Console.WriteLine(anuncio.nomeimagem);
+                //inserir cadastro
+                
                 _context.Add(anuncio);
                 await _context.SaveChangesAsync();
+                               
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ImovelForeignKey"] = new SelectList(_context.Imoveis, "ImovelID", "Cep", anuncio.ImovelForeignKey);
@@ -98,7 +111,7 @@ namespace UmTempoEmCasa.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AnuncioID,ImovelForeignKey,inicio,valor")] Anuncio anuncio)
+        public async Task<IActionResult> Edit(int id, [Bind("AnuncioID,ImovelForeignKey,inicio,valor,NomeAnuncio,ImagemAnuncio,nomeimagem")] Anuncio anuncio)
         {
             if (id != anuncio.AnuncioID)
             {

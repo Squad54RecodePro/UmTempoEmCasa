@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    
 }
 
 <!-- BANNER -->
@@ -24,14 +25,15 @@
                     <div class="row">
 
                         @foreach (var item in Model){
-               
+                        
+
                             <div class="col-lg-4 col-md-12 mb-4" >
                                 <div class="card-section-first rounded p-3" style="color: white; background-color: rgb(255,108,39);  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 69, 0, 25);">
                                     <div class="card-body">
                                         
                                         <div class="img-square-wrapper">
-                                            <a href="www.google.com">
-                                            <img src="http://via.placeholder.com/300x180" alt="" class="card-img-top" href="google.com" />
+                                            <a>
+                                            <img src="@("~/image/"+item.nomeimagem)" asp-append-version="true" width="310" height="220" alt="" class="card-img-top"  />
                                             </a>
                                         </div>
                                         

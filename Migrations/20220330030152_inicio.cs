@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace UmTempoEmCasa.Migrations
 {
-    public partial class Inicio : Migration
+    public partial class inicio : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -116,6 +116,7 @@ namespace UmTempoEmCasa.Migrations
                     ImovelForeignKey = table.Column<int>(type: "int", nullable: false),
                     inicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     valor = table.Column<float>(type: "real", nullable: false),
+                    nomeimagem = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImovelID1 = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

@@ -12,8 +12,8 @@ using UmTempoEmCasa.Context;
 namespace UmTempoEmCasa.Migrations
 {
     [DbContext(typeof(MVCContext))]
-    [Migration("20220329210528_Inicio")]
-    partial class Inicio
+    [Migration("20220330030936_nomeanuncio")]
+    partial class nomeanuncio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -101,8 +101,16 @@ namespace UmTempoEmCasa.Migrations
                     b.Property<int?>("ImovelID1")
                         .HasColumnType("int");
 
+                    b.Property<string>("NomeAnuncio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("inicio")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("nomeimagem")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("valor")
                         .HasColumnType("real");
