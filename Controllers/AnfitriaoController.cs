@@ -25,7 +25,10 @@ namespace UmTempoEmCasa.Controllers
         {
             return View(await _context.Anfitrioes.ToListAsync());
         }
-
+        public IActionResult termAnf()
+        { 
+            return View(); 
+        }
         // GET: Anfitriao/Details/5
         public async Task<IActionResult> Details(int? id)
         {

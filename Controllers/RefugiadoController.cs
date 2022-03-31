@@ -25,6 +25,10 @@ namespace UmTempoEmCasa.Controllers
         {
             return View(await _context.Refugiados.ToListAsync());
         }
+        public IActionResult term()
+        {
+            return View();
+        }
 
         // GET: Refugiado/Details/5
         public async Task<IActionResult> Details(int? id)

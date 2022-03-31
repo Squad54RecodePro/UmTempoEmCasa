@@ -8,6 +8,18 @@
     background-color: rgb(255,108,39);
     color: white;
 }
+.termAnfcss {
+    color: black;
+    background-color:white;
+}
+.linktermo {
+    text-align: center;
+    font-size: 12px;
+}
+.linktem a {
+    font-size: 10px;
+}
+
 
 
 .formulario label {

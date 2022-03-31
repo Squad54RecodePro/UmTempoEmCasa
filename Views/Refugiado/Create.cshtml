@@ -34,10 +34,7 @@
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/cpfEstrangeiro/Fcpf.asp" 
-                        target="_blank" style="font-size:20px;">Caso não possua <b><i>CPF</i></b> <br />
-                        Clique para ser redirecionado a <b><i>Receita Federal</i></b>
-                    </a>
+                    <a href="#" style="font-size:20px;">Caso não possua <b><i>CPF</i></b> <br />Clique para ser redirecionado a <b><i>Receita Federal</i></b></a>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
@@ -77,6 +74,12 @@
                     <span id="alerta" ></span>
                 </div>
                 <br />
+
+                <div class="linktermo"> 
+                    <p>Concordo com os <input type="checkbox" id="term" name="term"> <a class="linktem a" target="_blank" asp-controller="Anfitriao" asp-action="termAnf"> Termos de Serviços</a> e com o processamento dos meus dados</p>
+                </div>
+                    
+                 
                 <div class="col-md-6 offset-md-3 btnForm">
                     <input id="botaobloqueado" type="submit" value="Cadastrar" class="btn btn-success" />
                     
@@ -93,7 +96,7 @@
 <script>
    
    document.getElementById("botaobloqueado").disabled=true;
-
+    
     function validatePassword(){
         var password = document.getElementById("password").value;
         var confirm_password = document.getElementById("confirm_password").value;
