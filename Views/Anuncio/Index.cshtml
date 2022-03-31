@@ -38,13 +38,13 @@
                                         </div>
                                         
                                         <div class="card-body">
-                                            <h5 class="card-title"><b>CEP :</b> @Html.DisplayFor(modelItem => item.Imovel.Cep)</h5>
+                                            <h5 class="card-title"><b>Nome :</b> @Html.DisplayFor(modelItem => item.NomeAnuncio)</h5>
                                             <p class="class-text"><b>Disponível apartir de </b>@Html.DisplayFor(modelItem => item.inicio)</p>
                                             <p class="class-text"><b>R$</b> @Html.DisplayFor(modelItem => item.valor)</p>
                                             
                                             <div>
                                                 <p style="text-align:center;"><a class="btn btn-warning" asp-action="Details" asp-route-id="@item.AnuncioID">Detalhes</a> </p>
-                                                <p style="text-align:center;"><button class="btn btn-success">Comprar</button></p>
+                                                <p style="text-align:center;"><button class="btn btn-success">Reservar</button></p>
                                             </div>
                                         </div>
                                     </div>
