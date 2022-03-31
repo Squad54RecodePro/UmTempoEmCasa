@@ -51,6 +51,11 @@ a {
     color: #070707;
 }
 
+.navbar-nav a {
+    font-size: 18px;
+    color: black;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
