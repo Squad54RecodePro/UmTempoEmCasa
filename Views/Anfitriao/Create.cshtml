@@ -20,12 +20,24 @@
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Tipo" class="form-label">Tipo :</label>
-                    <select asp-for="Tipo" class="form-control">
-                        <option>Selecione...</option>
-                        <option>CPF</option>
-                        <option>CNPJ</option>
+                    <select id="tipo_pessoa" onChange="exibir(this)" asp-for="Tipo" class="form-control">
+                        <option value="0">Selecione...</option>
+                        <option value="fisico">CPF</option>
+                        <option value="juridico">CNPJ</option>
                     </select>
                     <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
+                <br />
+                 <div id="cpf" class="col-md-6 offset-md-3">
+                    <label asp-for="CPF" class="form-label">CPF :</label>
+                    <input asp-for="CPF" class="form-control" placeholder="Insira o CPF*"/>
+                    <span asp-validation-for="CPF" class="text-danger"></span>
+                </div>
+                <br />
+                <div id="cnpj" class="col-md-6 offset-md-3">
+                    <label asp-for="CNPJ" class="form-label">CNPJ :</label>
+                    <input asp-for="CNPJ" class="form-control" placeholder="Insira o CNPJ caso possua"/>
+                    <span asp-validation-for="CNPJ" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
@@ -64,18 +76,7 @@
                     <span asp-validation-for="CEP" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-md-6 offset-md-3">
-                    <label asp-for="CPF" class="form-label">CPF :</label>
-                    <input asp-for="CPF" class="form-control" placeholder="Insira o CPF*"/>
-                    <span asp-validation-for="CPF" class="text-danger"></span>
-                </div>
-                <br />
-                <div class="col-md-6 offset-md-3">
-                    <label asp-for="CNPJ" class="form-label">CNPJ :</label>
-                    <input asp-for="CNPJ" class="form-control" placeholder="Insira o CNPJ caso possua"/>
-                    <span asp-validation-for="CNPJ" class="text-danger"></span>
-                </div>
-                <br />
+               
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Senha" class="form-label">Senha :</label>
                     <input id="password" asp-for="Senha"  type="password" class="form-control" />
@@ -104,7 +105,20 @@
 </div>
 
 <script>
-   
+   document.getElementById('cpf').hidden=true;
+   document.getElementById('cnpj').hidden=true;
+
+   function exibir(val){
+       if(val.value=='fisico'){
+           document.getElementById('cpf').hidden=false;
+           document.getElementById('cnpj').hidden=true;
+       }
+       if (val.value=='juridico'){
+           document.getElementById('cnpj').hidden=false;
+           document.getElementById('cpf').hidden=true;
+       } 
+       
+   }
    document.getElementById("botaobloqueado").disabled=true;
 
     function validatePassword(){
