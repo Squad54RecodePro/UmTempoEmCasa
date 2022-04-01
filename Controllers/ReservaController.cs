@@ -50,7 +50,7 @@ namespace UmTempoEmCasa.Controllers
         // GET: Reserva/Create
         public IActionResult Create()
         {
-            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID");
+            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "NomeAnuncio");
             ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome");
             return View();
         }
@@ -66,9 +66,9 @@ namespace UmTempoEmCasa.Controllers
             {
                 _context.Add(reserva);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
-            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID", reserva.AnuncioForeignKey);
+            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "NomeAnuncio", reserva.AnuncioForeignKey);
             ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome", reserva.RefugiadoForeignKey);
             return View(reserva);
         }
@@ -86,7 +86,7 @@ namespace UmTempoEmCasa.Controllers
             {
                 return NotFound();
             }
-            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID", reserva.AnuncioForeignKey);
+            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "NomeAnuncio", reserva.AnuncioForeignKey);
             ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome", reserva.RefugiadoForeignKey);
             return View(reserva);
         }
@@ -123,7 +123,7 @@ namespace UmTempoEmCasa.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "AnuncioID", reserva.AnuncioForeignKey);
+            ViewData["AnuncioForeignKey"] = new SelectList(_context.Anuncios, "AnuncioID", "NomeAnuncio", reserva.AnuncioForeignKey);
             ViewData["RefugiadoForeignKey"] = new SelectList(_context.Refugiados, "RefugiadoID", "Nome", reserva.RefugiadoForeignKey);
             return View(reserva);
         }
