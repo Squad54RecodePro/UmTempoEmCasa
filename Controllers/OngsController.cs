@@ -24,6 +24,22 @@ namespace UmTempoEmCasa.Controllers
         {
             return View(await _context.Ongs.ToListAsync());
         }
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var ong = await _context.Ongs
+                .FirstOrDefaultAsync(m => m.OngsID == id);
+            if (ong == null)
+            {
+                return NotFound();
+            }
+
+            return View(ong);
+        }
 
         // GET: ONGs/Create
         public IActionResult Create()
