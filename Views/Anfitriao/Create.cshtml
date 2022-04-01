@@ -33,7 +33,7 @@
                     <input asp-for="CPF" class="form-control" placeholder="Insira o CPF*"/>
                     <span asp-validation-for="CPF" class="text-danger"></span>
                 </div>
-                <br />
+             
                 <div id="cnpj" class="col-md-6 offset-md-3">
                     <label asp-for="CNPJ" class="form-label">CNPJ :</label>
                     <input asp-for="CNPJ" class="form-control" placeholder="Insira o CNPJ caso possua"/>
@@ -93,7 +93,43 @@
                 <p> <input type="checkbox" id="termAnf" name="termAnf"> Concordo com os  <a class="linktem a" target="_blank" asp-controller="Refugiado" asp-action="term"> Termos de Serviços</a> e com o processamento dos meus dados</p>
                 </div>
                 <div class="col-md-6 offset-md-3 btnForm">
-                    <input type="submit" id="botaobloqueado" value="Cadastrar" class="btn btn-success" />
+                    
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel">Cadastro</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                    Deseja criar sua conta?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                                    <input class="btn btn-success" type="button" value="Sim" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel2"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                   Cadastro efetuado com sucesso!
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <input type="button" class="btn btn-success" data-bs-toggle="modal" id="botaobloqueado" href="#exampleModalToggle" role="button" value="Cadastrar"/>
+                    
                
                     <a class="btn btn-danger" asp-controller="Home" asp-action="Index" style="color:white;">Cancelar</a>
                 
@@ -109,7 +145,7 @@
 </div>
 
 <script>
-    document.getElementById('cpf').hidden=true;
+   document.getElementById('cpf').hidden=true;
    document.getElementById('cnpj').hidden=true;
    function exibir(val){
        if(val.value=='fisico'){
@@ -125,28 +161,26 @@
    
    document.getElementById("botaobloqueado").disabled=true;
 
-    function validatePassword(){
-        var password = document.getElementById("password").value;
-        var confirm_password = document.getElementById("confirm_password").value;
+   function validatePassword(){
+       var password = document.getElementById("password").value;
+       var confirm_password = document.getElementById("confirm_password").value;
 
-      console.log(password);
-      console.log(confirm_password);
+       console.log(password);
+       console.log(confirm_password);
 
        if(password == confirm_password) {
 
-            document.getElementById("alerta").innerHTML="Senhas Iguais";
-            document.getElementById("botaobloqueado").disabled=false;
+           document.getElementById("alerta").innerHTML="Senhas Iguais";
+           document.getElementById("botaobloqueado").disabled=false;
 
 
-        } else {
-            document.getElementById("alerta").innerHTML="Senhas diferentes";
-        }
-      
-}
-
-        
-    
-    </script>
+       } else {
+           document.getElementById("alerta").innerHTML="Senhas diferentes";
+       }
+   }
+ 
+   
+</script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

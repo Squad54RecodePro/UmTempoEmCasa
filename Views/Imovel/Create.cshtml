@@ -19,26 +19,63 @@
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Endereco" class="form-label">Endereço :</label>
-                    <input asp-for="Endereco" class="form-control" placeholder="Insira o endereço*"/>
+                    <input type="text" asp-for="Endereco" class="form-control" placeholder="Insira o endereço*"/>
                     <span asp-validation-for="Endereco" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Cidade" class="form-label">Cidade :</label>
-                    <input asp-for="Cidade" class="form-control" placeholder="Insira a cidade*"/>
+                    <input type="text" asp-for="Cidade" class="form-control" placeholder="Insira a cidade*"/>
                     <span asp-validation-for="Cidade" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Cep" class="form-label">CEP :</label>
-                    <input asp-for="Cep" class="form-control" placeholder="Insira o CEP*"/>
+                    <input type="text" asp-for="Cep" class="form-control" placeholder="Insira o CEP*"/>
                     <span asp-validation-for="Cep" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3 btnForm">
-                    <input type="submit" value="Cadastrar" class="btn btn-success" />
+                                                        
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel">Cadastro</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                    Deseja cadastrar seu imóvel?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                                    <input class="btn btn-success" type="button" value="Sim" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel2"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                   Cadastro efetuado com sucesso!
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 
-                     <a class="btn btn-danger" asp-controller="Home" asp-action="Index" style="color:white;">Cancelar</a>
+                    <input id="btnBloqueado" type="button" class="btn btn-success" data-bs-toggle="modal" id="botaobloqueado" href="#exampleModalToggle" role="button" value="Cadastrar"/>
+                    
+
+
+                    <a class="btn btn-danger" asp-controller="Home" asp-action="Index" style="color:white;">Cancelar</a>
                 </div>
             </form>
         </div>
@@ -48,6 +85,23 @@
         <a style="color:white" asp-action="Index" >Acessar a lista de Imóvel</a>
     </div>
 </div>
+
+<script>
+    
+    let d = document, [inputs, btnBloqueado] = [
+    d.querySelectorAll('[type = "text"]'),
+    d.querySelector('#btnBloqueado')]
+    btnBloqueado.disabled = true
+    
+    for(i = 0; i < inputs.length; i++){
+    inputs[i].addEventListener('input', () => {
+    let values = []
+    inputs.forEach(v => values.push(v.value))
+    btnBloqueado.disabled = values.includes('')
+    })
+    }
+
+</script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -14,34 +14,34 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Nome" class="form-label">Nome :</label>
-                    <input asp-for="Nome" class="form-control" placeholder="Insira seu nome*"/>
+                    <input type="text" asp-for="Nome" class="form-control" placeholder="Insira seu nome*"/>
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="Email" class="form-label">E-mail:</label>
-                    <input asp-for="Email" class="form-control" placeholder="Insira seu e-mail*"/>
+                    <input type="text" asp-for="Email" class="form-control" placeholder="Insira seu e-mail*"/>
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="assunto" class="form-label">Assunto :</label>
-                    <input asp-for="assunto" class="form-control" />
+                    <input type="text" id="assunto" asp-for="assunto" class="form-control" />
                     <span asp-validation-for="assunto" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="mensagem" class="form-label">Mensagem</label>
-                    <textarea asp-for="mensagem" class="form-control" style="height: 200px;" placeholder="A sua mensagem precisa ter pelo menos 40 caracteres">
+                    <textarea type="text" asp-for="mensagem" class="form-control" style="height: 200px;" placeholder="A sua mensagem precisa ter pelo menos 40 caracteres">
                     </textarea>
                     <span asp-validation-for="mensagem" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3 btnForm" style="padding-bottom:40px;">
                                    
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Enviar
-                    </button>
+                    <input type="button" id="btnBloqueado" class="btn btn-success" value="Enviar" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
+                        
+                    
 
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
@@ -68,6 +68,25 @@
     </div>
     
 </div>
+
+<script>
+    
+    let d = document, [inputs, btnBloqueado] = [
+    d.querySelectorAll('[type = "text"]'),
+    d.querySelector('#btnBloqueado')]
+    btnBloqueado.disabled = true
+    
+    for(i = 0; i < inputs.length; i++){
+    inputs[i].addEventListener('input', () => {
+    let values = []
+    inputs.forEach(v => values.push(v.value))
+    btnBloqueado.disabled = values.includes('')
+    })
+    }
+
+</script>
+
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -19,7 +19,7 @@
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="NomeAnuncio" class="form-label">Nome do Anúncio</label>
-                    <input asp-for="NomeAnuncio" class="form-control" />
+                    <input type="text" asp-for="NomeAnuncio" class="form-control" />
                     <span asp-validation-for="NomeAnuncio" class="text-danger"></span>
                 </div>
                 <br />
@@ -31,7 +31,7 @@
                 <br />
                 <div class="col-md-6 offset-md-3">
                     <label asp-for="valor" class="form-label">Valor :</label>
-                    <input asp-for="valor" class="form-control" />
+                    <input type="text" asp-for="valor" class="form-control" />
                     <span asp-validation-for="valor" class="text-danger"></span>
                 </div>
                 <br/>
@@ -42,7 +42,43 @@
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3">
-                    <input type="submit" value="Criar" class="btn btn-success" />
+                                                        
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel">Cadastro</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                    Deseja criar seu Anúncio?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                                    <input class="btn btn-success" type="button" value="Sim" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel2"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                   Cadastro efetuado com sucesso!
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <input id="btnBloqueado" type="button" class="btn btn-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button" value="Criar"/>
+                    
                 </div>
             </form>
         </div>
@@ -52,6 +88,23 @@
         <a style="color: white;" asp-action="Index"><b>Acessar a lista de Anúncios</b></a>
     </div>
 </div>
+
+<script>
+
+    let d = document, [inputs, btnBloqueado] = [
+    d.querySelectorAll('[type = "text"]'),
+    d.querySelector('#btnBloqueado')]
+    btnBloqueado.disabled = true
+    
+    for(i = 0; i < inputs.length; i++){
+    inputs[i].addEventListener('input', () => {
+    let values = []
+    inputs.forEach(v => values.push(v.value))
+    btnBloqueado.disabled = values.includes('')
+    })
+    }
+
+</script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
