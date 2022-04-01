@@ -96,7 +96,7 @@ namespace UmTempoEmCasa.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ReservaID,RefugiadoForeignKey,AnuncioForeignKey,Nome,DateInicio,DataFim")] Reserva reserva)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservaID,RefugiadoForeignKey,AnuncioForeignKey,DateInicio,DataFim")] Reserva reserva)
         {
             if (id != reserva.ReservaID)
             {

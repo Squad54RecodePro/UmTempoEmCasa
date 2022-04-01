@@ -12,8 +12,8 @@ using UmTempoEmCasa.Context;
 namespace UmTempoEmCasa.Migrations
 {
     [DbContext(typeof(MVCContext))]
-    [Migration("20220330172252_inicio")]
-    partial class inicio
+    [Migration("20220401033738_iicio")]
+    partial class iicio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -293,10 +293,6 @@ namespace UmTempoEmCasa.Migrations
 
                     b.Property<DateTime>("DateInicio")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RefugiadoForeignKey")
                         .HasColumnType("int");

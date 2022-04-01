@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace UmTempoEmCasa.Migrations
 {
-    public partial class inicio : Migration
+    public partial class iicio : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -144,7 +144,6 @@ namespace UmTempoEmCasa.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RefugiadoForeignKey = table.Column<int>(type: "int", nullable: false),
                     AnuncioForeignKey = table.Column<int>(type: "int", nullable: false),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DateInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataFim = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

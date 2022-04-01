@@ -292,10 +292,6 @@ namespace UmTempoEmCasa.Migrations
                     b.Property<DateTime>("DateInicio")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("RefugiadoForeignKey")
                         .HasColumnType("int");
 
