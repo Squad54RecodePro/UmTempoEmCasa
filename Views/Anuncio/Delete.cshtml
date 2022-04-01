@@ -5,37 +5,37 @@
 }
 
 <div class="container formulario">
-    <h1>Excluir</h1>
 
-    <h3 style="color: red;">Você deseja realmente excluir</h3>
-    <div>
-        <h4>Anúncio</h4>
-        <hr />
-        <dl class="row">
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Imovel)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Imovel.Cep)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.inicio)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.inicio)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.valor)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.valor)
-            </dd>
-        </dl>
+    <h3 style="text-align: center;">Deseja realmente exluir?</h3>
+
+    <div class="container" style="padding-top: 30px; padding-left: 40px;">
+       
+        <label class="col-sm-2"><b>Nome :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeAnuncio)
+        </label>
+        <br /><br />
+
+        <label class="col-sm-2"><b>Disponível apartir de</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.inicio)
+        </label>
+        <br /><br />
+
+        <label class="col-sm-2"><b>Valor :</b></label>
+        <br/>
+        <label class = "col-sm-10">R$
+            @Html.DisplayFor(model => model.valor)
+        </label>
+    </div>
     
+    <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
         <form asp-action="Delete">
             <input type="hidden" asp-for="AnuncioID" />
-            <input type="submit" value="Excluir" class="btn btn-danger" /> |
-            <a asp-action="Index">Voltar para a Lista</a>
+            <input type="submit" value="Excluir" class="btn btn-danger" /> 
+            <input type="submit" value="Voltar para a Lista" class="btn btn-warning" asp-action="Index"/>        
         </form>
     </div>
 </div>

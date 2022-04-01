@@ -37,20 +37,36 @@
                     <span asp-validation-for="mensagem" class="text-danger"></span>
                 </div>
                 <br />
-                <div class="col-md-6 offset-md-3 btnForm">
-                    <input type="submit" value="Enviar" class="btn btn-success" />
-                
+                <div class="col-md-6 offset-md-3 btnForm" style="padding-bottom:40px;">
+                                   
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Enviar
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" style="color:black" id="exampleModalLabel">Enviar Mensagem</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="color:black">
+                            Deseja enviar a mensagem?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <input type="submit" value="Enviar" class="btn btn-success"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                     <a class="btn btn-danger" asp-controller="Home" asp-action="Index" style="color:white;">Cancelar</a>
                 </div>
             </form>
         </div>
     </div>
-    <hr />
-    <!--
-    <div>
-        <a asp-action="Index"><b>Acessar a lista de Contatos</b></a>
-    </div>
-    -->
+    
 </div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

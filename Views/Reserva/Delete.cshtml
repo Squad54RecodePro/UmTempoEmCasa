@@ -5,44 +5,43 @@
 }
 
 <div class="container formulario">
-    <h1>Excluir</h1>
+    <h3 style="text-align: center; ">Você deseja realmente excluir?</h3>
 
-    <h3 style="color: red;">Você deseja realmente excluir</h3>
-    <div>
-        <h4>Reserva</h4>
-        <hr />
-        <dl class="row">
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Refugiados)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Refugiados.Nome)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Anuncios)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Anuncios.AnuncioID)
-            </dd>
-            
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.DateInicio)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.DateInicio)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.DataFim)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.DataFim)
-            </dd>
-        </dl>
-    
+    <div class="container" style="padding-top: 30px; padding-left: 40px;">
+        
+        <label class = "col-sm-2"><b>Refugiados :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Refugiados.Nome)
+        </label>
+        <br /><br>
+
+        <label class = "col-sm-2"><b>Anúncios :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Anuncios.AnuncioID)
+        </label>
+        <br /><br />
+        
+        <label class = "col-sm-2"><b>DateInicio :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateInicio)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>DataFim :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataFim)
+        </label>
+
+    </div>
+    <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
         <form asp-action="Delete">
             <input type="hidden" asp-for="ReservaID" />
-            <input type="submit" value="Excluir" class="btn btn-danger" /> |
-            <a asp-action="Index">Voltar para a Lista</a>
+            <input type="submit" value="Excluir" class="btn btn-danger" /> 
+            <input type="submit" class="btn btn-warning" value="Voltar para a Lista" asp-action="Index"/>
         </form>
     </div>
 </div>

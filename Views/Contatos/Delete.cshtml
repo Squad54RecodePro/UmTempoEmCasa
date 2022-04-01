@@ -5,43 +5,43 @@
 }
 
 <div class="container formulario">
-    <h1>Excluir</h1>
+    <h3 style="text-align: center;">Deseja realmente exluir?</h3>
+  
+    <div class="container" style="padding-top: 30px; padding-left: 40px;">
+        
+        <label class = "col-sm-2"><b>Nome :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </label>
+        <br /><br />
 
-    <h3 style="color: red;">Você deseja realmente excluir</h3>
-    <div>
-        <h4>Contato</h4>
-        <hr />
-        <dl class="row">
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Nome)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Nome)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Email)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Email)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.assunto)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.assunto)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.mensagem)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.mensagem)
-            </dd>
-        </dl>
-    
+        <label class = "col-sm-2"><b>Email :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Assunto :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.assunto)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Mensagem :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.mensagem)
+        </label>
+
+    </div>
+    <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
         <form asp-action="Delete">
             <input type="hidden" asp-for="Id" />
-            <input type="submit" value="Excluir" class="btn btn-danger" /> |
-            <a asp-action="Index">Voltar para a Lista</a>
+            <input type="submit" value="Excluir" class="btn btn-danger" />
+            <input type="submit" class="btn btn-warning" value="Voltar para a Lista" asp-action="Index"/>
         </form>
-    </div>
+   </div>
 </div>

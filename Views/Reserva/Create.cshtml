@@ -35,9 +35,45 @@
                 </div>
                 <br />
                 <div class="col-md-6 offset-md-3 btnForm">
-                    <input type="submit" value="Cadastrar" class="btn btn-success" />
                 
+                    
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel">Reserva</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                    Deseja realmente fazer a Reserva?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                                    <button class="btn btn-success" type="button" value="Cadastrar" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Sim</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color:black;" id="exampleModalToggleLabel2">Cadastro efetuado com Sucesso!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color:black;">
+                                    Em breve entraremos em contato para completar a sua solicitação.
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <a class="btn btn-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Reservar</a>
                     <a class="btn btn-danger" asp-controller="Home" asp-action="Index" style="color:white;">Cancelar</a>
+                
                 </div>
             </form>
         </div>
@@ -51,3 +87,5 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+

@@ -4,60 +4,51 @@
 }
 
 <div class="container formulario">
-    <h1>Excluir</h1>
-
-    <h3 style="color: red;">Você deseja realmente excluir</h3>
-    <div>
-        <h4>Ongs</h4>
-        <hr />
-        <dl class="row">
-
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Nome)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Nome)
-            </dd>
-
-
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.CNPJ)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.CNPJ)
-            </dd>
-
-
-             <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Endereco)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Endereco)
-            </dd>
-
-            
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Telefone)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Telefone)
-            </dd>
-
-
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Email)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Email)
-            </dd>
-                                 
-           
-        </dl>
     
+    <h3 style="text-align: center; ">Você deseja realmente excluir?</h3>
+    
+    <div class="container" style="padding-top: 30px; padding-left: 40px;">
+        
+        <label class = "col-sm-2"><b>Nome :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>CNPJ :</b></label>
+        <br />
+        <Label class = "col-sm-10">
+            @Html.DisplayFor(model => model.CNPJ)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Endereço :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Endereco)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Telefone :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telefone)
+        </label>
+        <br /><br />
+
+        <label class = "col-sm-2"><b>Email :</b></label>
+        <br />
+        <label class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </label>
+          
+    </div>
+    <div style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
         <form asp-action="Delete">
             <input type="hidden" asp-for="OngsID" />
-            <input type="submit" value="Excluir" class="btn btn-danger" /> |
-            <a asp-action="Index"><b>Voltar para a Lista</b></a>
+            <input type="submit" value="Excluir" class="btn btn-danger" /> 
+            <input type="submit" class="btn btn-warning" value="Voltar para a Lista" asp-action="Index"/>
         </form>
     </div>
 </div>
